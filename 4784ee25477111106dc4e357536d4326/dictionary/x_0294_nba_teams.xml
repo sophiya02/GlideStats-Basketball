@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Teams" max_length="40" name="x_0294_nba_teams" type="collection">
+        <element label="City" max_length="100" name="city" type="string"/>
+        <element label="Code" max_length="10" name="code" type="string"/>
+        <element label="Conference" max_length="100" name="conference" type="string"/>
+        <element label="Division" max_length="100" name="division" type="string"/>
+        <element label="ID" max_length="2" name="id" type="integer"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <index name="index">
+            <element name="id"/>
+        </index>
+    </element>
+</database>

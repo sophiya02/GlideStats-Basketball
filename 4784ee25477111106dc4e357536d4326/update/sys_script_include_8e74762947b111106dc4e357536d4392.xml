@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_0294_nba.BasketballUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Script library for NBA Basketball application.</description>
+        <name>BasketballUtils</name>
+        <script><![CDATA[var BasketballUtils = Class.create();
+BasketballUtils.prototype = {
+	LOGGER_SOURCE: "NBA Basketball",
+	CORRELATION_DISPLAY: "NBA Basketball",
+    initialize: function() {
+		this.verbose = gs.getProperty('x_0294_nba.verbose');
+		this.apinbakey = gs.getProperty("x_0294_nba.API NBA Key");
+    },
+	
+	debug: function(msg) {
+		if (this.verbose == "true") {
+			gs.info(msg, this.LOGGER_SOURCE);
+		}
+	},
+	
+	getTeams: function() {
+		var r = new sn_ws.RESTMessageV2('API NBA', 'Teams');
+		r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+		var res = r.execute();
+		var response = res.getBody();
+		this.debug('Teams' + response);
+		var parser = JSON.parse(response);
+		gs.info('Test' + parser.response[0].id);
+		gs.info('Test' + parser.response[1].id);
+		gs.info('TestLength' + parser.response.length);
+		for (var i = 0; i < parser.response.length; i++) {
+		//	gs.info('Test' + parser.response[i].id);
+			if (parser.response[i].nbaFranchise == true && parser.response[i].name != 'Home Team Stephen A') {
+			var gr = new GlideRecord('x_0294_nba_import_teams');
+			gr.initialize();
+			gr.city = parser.response[i].city;
+			gr.code = parser.response[i].code;
+			gr.conference = parser.response[i].leagues.standard.conference;
+			gr.division = parser.response[i].leagues.standard.division;
+			gr.id = parser.response[i].id;
+			gr.name = parser.response[i].name;
+			gr.insert();
+			}
+		}
+	},
+	
+	getPlayers: function(season, team) {
+		var r = new sn_ws.RESTMessageV2('API NBA', 'Players');
+		r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+		r.setQueryParameter("season", season);
+		r.setQueryParameter("team", team);
+		var res = r.execute();
+		var response = res.getBody();
+		this.debug('Players: ' + response);
+	},
+
+    type: 'BasketballUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 20:47:44</sys_created_on>
+        <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>BasketballUtils</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 23:04:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

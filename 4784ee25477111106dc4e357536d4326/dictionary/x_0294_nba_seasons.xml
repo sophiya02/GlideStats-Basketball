@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Seasons" max_length="40" name="x_0294_nba_seasons" type="collection">
+        <element label="Year" max_length="4" name="year" type="integer"/>
+    </element>
+</database>

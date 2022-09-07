@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Import Teams" max_length="40" name="x_0294_nba_import_teams" type="collection">
+        <element label="City" max_length="200" name="city" type="string"/>
+        <element label="Code" max_length="10" name="code" type="string"/>
+        <element label="Conference" max_length="200" name="conference" type="string"/>
+        <element label="Division" max_length="200" name="division" type="string"/>
+        <element label="ID" max_length="10" name="id" type="string"/>
+        <element label="Name" max_length="200" name="name" type="string"/>
+    </element>
+</database>

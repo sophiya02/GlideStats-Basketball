@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>API NBA key.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_0294_nba.API NBA Key</name>
+        <read_roles/>
+        <suffix>API NBA Key</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 20:41:38</sys_created_on>
+        <sys_id>5dc33ae547b111106dc4e357536d43d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_0294_nba.API NBA Key</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_properties_5dc33ae547b111106dc4e357536d43d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 20:41:38</sys_updated_on>
+        <type>string</type>
+        <value>a016d8cd8dmsh59c00394a4fb234p11e10ajsna5d235ecd666</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=5dc33ae547b111106dc4e357536d43d2"/>
+</record_update>
