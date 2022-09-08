@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Team Stats" max_length="40" name="x_0294_nba_teams_stats" type="collection">
+        <element label="Assists" max_length="6" name="assists" type="integer"/>
+        <element label="Blocks" max_length="6" name="blocks" type="integer"/>
+        <element label="Defensive Rebounds" max_length="6" name="defensive_rebounds" type="integer"/>
+        <element label="FG%" max_length="15" name="fgp" type="decimal"/>
+        <element label="Field Goals Attempted" max_length="6" name="field_goals_attempted" type="integer"/>
+        <element label="Field Goals Made" max_length="6" name="field_goals_made" type="integer"/>
+        <element label="Fouls" max_length="6" name="fouls" type="integer"/>
+        <element label="Free Throws Attempted" max_length="6" name="free_throws_attempted" type="integer"/>
+        <element label="Free Throws Made" max_length="6" name="free_throws_made" type="integer"/>
+        <element label="FT%" max_length="15" name="ftp" type="decimal"/>
+        <element label="Games" max_length="6" name="games" type="integer"/>
+        <element label="ID" max_length="6" name="id" type="integer"/>
+        <element label="Offensive Rebounds" max_length="6" name="offensive_rebounds" type="integer"/>
+        <element label="+/-" max_length="6" name="plus_minus" type="integer"/>
+        <element label="Points" max_length="6" name="points" type="integer"/>
+        <element label="Points in the Paint" max_length="6" name="points_in_the_paint" type="integer"/>
+        <element label="Points Off Turnovers" max_length="6" name="points_off_turnovers" type="integer"/>
+        <element label="Second Chance Points" max_length="6" name="second_chance_points" type="integer"/>
+        <element label="Steals" max_length="6" name="steals" type="integer"/>
+        <element label="Team" max_length="32" name="team" reference="x_0294_nba_teams" type="reference"/>
+        <element label="Total Rebounds" max_length="6" name="total_rebounds" type="integer"/>
+        <element label="Turnovers" max_length="6" name="turnovers" type="integer"/>
+        <element label="3P%" max_length="15" name="u_3pp" type="decimal"/>
+        <element label="3P Attempted" max_length="6" name="u_3p_attempted" type="integer"/>
+        <element label="3P Made" max_length="6" name="u_3p_made" type="integer"/>
+        <element label="Year" max_length="6" name="year" type="string"/>
+        <index name="index">
+            <element name="id"/>
+        </index>
+        <index name="index2">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

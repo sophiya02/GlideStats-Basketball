@@ -94,14 +94,14 @@ BasketballUtils.prototype = {
 
     getAllPlayersForYear: function(year) { //Loops through each team for a particular year to grab all of the players who were in the NBA that year.
         var gr = new GlideRecord("x_0294_nba_teams");
-        var teamsArray = [];
         gr.query();
         gs.info('Running teams number ' + gr.getRowCount());
         while (gr.next()) {
             this.getPlayers(year, gr.id.toString());
-            sleep(this.sleep);
+            if (this.sleep == 'true') {
+                sleep(10000);
+            }
         }
-        gs.info('Running array ' + teamsArray);
 
         function sleep(ms) {
             var endSleep = new GlideDuration().getNumericValue() + ms;
@@ -129,13 +129,51 @@ BasketballUtils.prototype = {
         gr.year = season;
         gr.id = team;
         gr.fgp = parser.response[0].fgp;
-		gr.u_3pp = parser.response[0].tpp;
-		gr.ftp = parser.response[0].ftp;
+        gr.u_3pp = parser.response[0].tpp;
+        gr.ftp = parser.response[0].ftp;
+        gr.field_goals_attempted = parser.response[0].fga;
+        gr.defensive_rebounds = parser.response[0].defReb;
+        gr.plus_minus = parser.response[0].plusMinus;
+        gr.turnovers = parser.response[0].turnovers;
+        gr.fouls = parser.response[0].pFouls;
+        gr.free_throws_attempted = parser.response[0].fta;
+        gr.assists = parser.response[0].assists;
+        gr.second_chance_points = parser.response[0].secondChancePoints;
+        gr.u_3p_attempted = parser.response[0].tpa;
+        gr.u_3p_made = parser.response[0].tpm;
+        gr.points_in_the_paint = parser.response[0].pointsInPaint;
+        gr.free_throws_made = parser.response[0].ftm;
+        gr.offensive_rebounds = parser.response[0].offReb;
+        gr.field_goals_made = parser.response[0].fgm;
+        gr.points_off_turnovers = parser.response[0].pointsOffTurnovers;
+        gr.total_rebounds = parser.response[0].totReb;
+        gr.steals = parser.response[0].steals;
+        gr.points = parser.response[0].points;
+        gr.blocks = parser.response[0].blocks;
+        gr.games = parser.response[0].games;
         gr.insert();
-
 
     },
 
+    getAllTeamStatsForYear: function(year) {
+        var gr = new GlideRecord("x_0294_nba_teams");
+        gr.query();
+        gs.info('Running teams number ' + gr.getRowCount());
+        while (gr.next()) {
+            this.getTeamStatsForYear(year, gr.id.toString());
+            if (this.sleep == 'true') {
+                sleep(10000);
+            }
+        }
+
+        function sleep(ms) {
+            var endSleep = new GlideDuration().getNumericValue() + ms;
+            while (new GlideDuration().getNumericValue() < endSleep) {
+                //wait 
+            }
+        }
+
+    },
 
     type: 'BasketballUtils'
 };]]></script>
@@ -143,13 +181,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:36:10</sys_updated_on>
+        <sys_updated_on>2022-09-08 20:52:09</sys_updated_on>
     </sys_script_include>
 </record_update>

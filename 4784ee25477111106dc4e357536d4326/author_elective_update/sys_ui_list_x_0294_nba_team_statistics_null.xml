@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_0294_nba_team_statistics" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>team</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>8d445ffd477111106dc4e357536d43f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>01445ffd477111106dc4e357536d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>city</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>81445ffd477111106dc4e357536d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>code</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>05445ffd477111106dc4e357536d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>conference</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>85445ffd477111106dc4e357536d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>division</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>09445ffd477111106dc4e357536d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>id</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>89445ffd477111106dc4e357536d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>fgp</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>0d445ffd477111106dc4e357536d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ftp</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>8d445ffd477111106dc4e357536d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>games</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>01445ffd477111106dc4e357536d43f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_3pp</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>81445ffd477111106dc4e357536d43f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>year</element>
+            <list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_id>05445ffd477111106dc4e357536d43f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_0294_nba_team_statistics</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-08 17:40:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1445ffd477111106dc4e357536d43f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_0294_nba_team_statistics</sys_name>
+            <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_update_name>sys_ui_list_x_0294_nba_team_statistics_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-08 17:40:52</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</application>
+        <file_path/>
+        <instance_id>fec351a2dbb1c05407072f17d49619af</instance_id>
+        <instance_name>dev96325</instance_name>
+        <name>sys_ui_list_x_0294_nba_team_statistics_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_0294_nba_team_statistics" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>team</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>8d445ffd477111106dc4e357536d43f2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>name</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>01445ffd477111106dc4e357536d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>city</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>81445ffd477111106dc4e357536d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>code</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>05445ffd477111106dc4e357536d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>conference</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>85445ffd477111106dc4e357536d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>division</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>09445ffd477111106dc4e357536d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>id</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>6</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>89445ffd477111106dc4e357536d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>fgp</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>7</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>0d445ffd477111106dc4e357536d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>ftp</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>8</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>8d445ffd477111106dc4e357536d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>games</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>9</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>01445ffd477111106dc4e357536d43f4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_3pp</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>10</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>81445ffd477111106dc4e357536d43f4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>year</element><list_id display_value="x_0294_nba_team_statistics" element="NULL" name="x_0294_nba_team_statistics" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c1445ffd477111106dc4e357536d43f2</list_id><max_value>false</max_value><min_value>false</min_value><position>11</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_id>05445ffd477111106dc4e357536d43f4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_0294_nba_team_statistics</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:40:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c1445ffd477111106dc4e357536d43f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_0294_nba_team_statistics</sys_name><sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package><sys_policy/><sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope><sys_update_name>sys_ui_list_x_0294_nba_team_statistics_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:40:52</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>180677253</payload_hash>
+        <record_name>Team Statistics</record_name>
+        <reverted_from/>
+        <source>1ae5ae69477111106dc4e357536d43db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 17:40:53</sys_created_on>
+        <sys_id>01445ffd477111106dc4e357536d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1831e30b8ad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:40:53</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>c5445ffde3711110ccde893ad9517df6</update_guid>
+        <update_guid_history>c5445ffde3711110ccde893ad9517df6:180677253,d39393fdfa7111103b86ed4188be1dbe:1221668042</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 19:59:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>3342e93456c14470a839f694942311b9</sys_id>
+        <sys_metadata>c1445ffd477111106dc4e357536d43f2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_0294_nba_team_statistics</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_parent display_value="">efbe4739477111106dc4e357536d434b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope_delete display_value="">6bba8fc075e542d8b2a07b1d6d92c240</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_0294_nba_team_statistics_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_0294_nba_team_statistics_null">01445ffd477111106dc4e357536d43f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 19:59:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
