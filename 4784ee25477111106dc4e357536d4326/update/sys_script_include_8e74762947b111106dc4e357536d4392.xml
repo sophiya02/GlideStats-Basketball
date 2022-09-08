@@ -9,54 +9,133 @@
         <name>BasketballUtils</name>
         <script><![CDATA[var BasketballUtils = Class.create();
 BasketballUtils.prototype = {
-	LOGGER_SOURCE: "NBA Basketball",
-	CORRELATION_DISPLAY: "NBA Basketball",
+    LOGGER_SOURCE: "NBA Basketball",
+    CORRELATION_DISPLAY: "NBA Basketball",
     initialize: function() {
-		this.verbose = gs.getProperty('x_0294_nba.verbose');
-		this.apinbakey = gs.getProperty("x_0294_nba.API NBA Key");
+        this.verbose = gs.getProperty('x_0294_nba.verbose');
+        this.apinbakey = gs.getProperty("x_0294_nba.API NBA Key");
+        this.sleep = gs.getProperty("x_0294_nba.sleep");
     },
-	
-	debug: function(msg) {
-		if (this.verbose == "true") {
-			gs.info(msg, this.LOGGER_SOURCE);
-		}
-	},
-	
-	getTeams: function() {
-		var r = new sn_ws.RESTMessageV2('API NBA', 'Teams');
-		r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
-		var res = r.execute();
-		var response = res.getBody();
-		this.debug('Teams' + response);
-		var parser = JSON.parse(response);
-		gs.info('Test' + parser.response[0].id);
-		gs.info('Test' + parser.response[1].id);
-		gs.info('TestLength' + parser.response.length);
-		for (var i = 0; i < parser.response.length; i++) {
-		//	gs.info('Test' + parser.response[i].id);
-			if (parser.response[i].nbaFranchise == true && parser.response[i].name != 'Home Team Stephen A') {
-			var gr = new GlideRecord('x_0294_nba_import_teams');
-			gr.initialize();
-			gr.city = parser.response[i].city;
-			gr.code = parser.response[i].code;
-			gr.conference = parser.response[i].leagues.standard.conference;
-			gr.division = parser.response[i].leagues.standard.division;
-			gr.id = parser.response[i].id;
-			gr.name = parser.response[i].name;
-			gr.insert();
-			}
-		}
-	},
-	
-	getPlayers: function(season, team) {
-		var r = new sn_ws.RESTMessageV2('API NBA', 'Players');
-		r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
-		r.setQueryParameter("season", season);
-		r.setQueryParameter("team", team);
-		var res = r.execute();
-		var response = res.getBody();
-		this.debug('Players: ' + response);
-	},
+
+    debug: function(msg) {
+        if (this.verbose == "true") {
+            gs.info(msg, this.LOGGER_SOURCE);
+        }
+    },
+
+    getTeams: function() { //gets info for each NBA team, including unique ID. Due to the unchanging nature of NBA teams, this likely does not need to be run very often after an initial load
+        var r = new sn_ws.RESTMessageV2('API NBA', 'Teams');
+        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Teams' + response);
+        var parser = JSON.parse(response);
+        for (var i = 0; i < parser.response.length; i++) {
+            if (parser.response[i].nbaFranchise == true && parser.response[i].name != 'Home Team Stephen A') {
+                var gr = new GlideRecord('x_0294_nba_import_teams');
+                gr.initialize();
+                gr.city = parser.response[i].city;
+                gr.code = parser.response[i].code;
+                gr.conference = parser.response[i].leagues.standard.conference;
+                gr.division = parser.response[i].leagues.standard.division;
+                gr.id = parser.response[i].id;
+                gr.name = parser.response[i].name;
+                gr.insert();
+            }
+        }
+    },
+
+    getPlayers: function(season, team) { //Gets players on a team by providing the year and the ID of the team record. ID is found on the Teams table.
+        var r = new sn_ws.RESTMessageV2('API NBA', 'Players');
+        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+        r.setQueryParameter("season", season);
+        r.setQueryParameter("team", team);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Players: ' + response);
+        var parser = JSON.parse(response);
+        for (var i = 0; i < parser.response.length; i++) {
+            var gr = new GlideRecord('x_0294_nba_import_players');
+            gr.initialize();
+            gr.first_name = parser.response[i].firstname;
+            gr.last_name = parser.response[i].lastname;
+            gr.years_pro = parser.response[i].nba.pro;
+            gr.weight = parser.response[i].weight.pounds;
+            gr.height_inches = parser.response[i].height.inches;
+            gr.height_feet = parser.response[i].height.feets;
+            gr.rookie_year = parser.response[i].nba.start;
+            gr.college = parser.response[i].college;
+            gr.birthday = parser.response[i].birth.date;
+            gr.id = parser.response[i].id;
+            gr.country = parser.response[i].birth.country;
+
+            var jersey = '';
+            try {
+                jersey = parser.response[i].leagues.standard.jersey;
+            } catch (e) {
+                this.debug('No listed jersey number.');
+            }
+
+            gr.jersey_number = jersey;
+
+            var position = '';
+            try {
+                position = parser.response[i].leagues.standard.pos;
+            } catch (e) {
+                this.debug('No listed position.');
+            }
+
+            gr.position = position;
+
+            gr.insert();
+        }
+
+    },
+
+    getAllPlayersForYear: function(year) { //Loops through each team for a particular year to grab all of the players who were in the NBA that year.
+        var gr = new GlideRecord("x_0294_nba_teams");
+        var teamsArray = [];
+        gr.query();
+        gs.info('Running teams number ' + gr.getRowCount());
+        while (gr.next()) {
+            this.getPlayers(year, gr.id.toString());
+            sleep(this.sleep);
+        }
+        gs.info('Running array ' + teamsArray);
+
+        function sleep(ms) {
+            var endSleep = new GlideDuration().getNumericValue() + ms;
+            while (new GlideDuration().getNumericValue() < endSleep) {
+                //wait 
+            }
+
+            return;
+        }
+
+    },
+
+    getTeamStatsForYear: function(season, team) {
+        var r = new sn_ws.RESTMessageV2('API NBA', 'Team Stats');
+        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+        r.setQueryParameter("season", season);
+        r.setQueryParameter("id", team);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Team Statistics: ' + response);
+        var parser = JSON.parse(response);
+        //    for (var i = 0; i < parser.response.length; i++) {
+        var gr = new GlideRecord('x_0294_nba_import_team_statistics');
+        gr.initialize();
+        gr.year = season;
+        gr.id = team;
+        gr.fgp = parser.response[0].fgp;
+		gr.u_3pp = parser.response[0].tpp;
+		gr.ftp = parser.response[0].ftp;
+        gr.insert();
+
+
+    },
+
 
     type: 'BasketballUtils'
 };]]></script>
@@ -64,13 +143,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-07 23:04:09</sys_updated_on>
+        <sys_updated_on>2022-09-08 17:36:10</sys_updated_on>
     </sys_script_include>
 </record_update>
