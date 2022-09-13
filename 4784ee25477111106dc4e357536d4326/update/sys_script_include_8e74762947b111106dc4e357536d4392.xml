@@ -99,17 +99,8 @@ BasketballUtils.prototype = {
         while (gr.next()) {
             this.getPlayers(year, gr.id.toString());
             if (this.sleep == 'true') {
-                sleep(10000);
+                this._sleepytime(10000);
             }
-        }
-
-        function sleep(ms) {
-            var endSleep = new GlideDuration().getNumericValue() + ms;
-            while (new GlideDuration().getNumericValue() < endSleep) {
-                //wait 
-            }
-
-            return;
         }
 
     },
@@ -123,7 +114,6 @@ BasketballUtils.prototype = {
         var response = res.getBody();
         this.debug('Team Statistics: ' + response);
         var parser = JSON.parse(response);
-        //    for (var i = 0; i < parser.response.length; i++) {
         var gr = new GlideRecord('x_0294_nba_import_team_statistics');
         gr.initialize();
         gr.year = season;
@@ -162,17 +152,63 @@ BasketballUtils.prototype = {
         while (gr.next()) {
             this.getTeamStatsForYear(year, gr.id.toString());
             if (this.sleep == 'true') {
-                sleep(10000);
+
+                this._sleepytime(10000);
             }
         }
 
-        function sleep(ms) {
-            var endSleep = new GlideDuration().getNumericValue() + ms;
-            while (new GlideDuration().getNumericValue() < endSleep) {
-                //wait 
-            }
-        }
+    },
 
+    getGameIDsByDate: function(date) {
+        var r = new sn_ws.RESTMessageV2('API NBA', 'Games');
+        var ids = [];
+        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+        r.setQueryParameter("date", date);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Full game object: ' + response);
+        var parser = JSON.parse(response);
+        for (var i = 0; i < parser.response.length; i++) {
+            ids.push(parser.response[i].id);
+        }
+        this.debug('Yesterday Game IDs: ' + ids);
+        return ids;
+    },
+
+    getPlayerStatsForGame: function(game) {
+        var r = new sn_ws.RESTMessageV2('API NBA', 'Player Stats');
+        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+        r.setQueryParameter("game", game);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Game Player Statistics: ' + response);
+        var parser = JSON.parse(response);
+        for (var i = 0; i < parser.response.length; i++) {
+            var gr = new GlideRecord('x_0294_nba_import_player_game_stats');
+            gr.initialize();
+            gr.points = parser.response[i].points;
+			gr.player_id = parser.response[i].player.id;
+            gr.insert();
+        }
+    },
+
+    getYesterdayStatsForAllPlayers: function() {
+
+        var a = new GlideDate();
+        a.setValue('2022-02-02');
+        //a.addDaysUTC(-1); THIS IS THE RIGHT ONE ONCE THIS IS READY TO GO, COMMENT OUT THE LINE ABOVE
+        var ids = this.getGameIDsByDate(a);
+        for (var i = 0; i < ids.length; i++) {
+            //this.debug(ids[i]);
+            this.getPlayerStatsForGame(ids[i]);
+        }
+    },
+
+    _sleepytime: function(ms) {
+        var endSleep = new GlideDuration().getNumericValue() + ms;
+        while (new GlideDuration().getNumericValue() < endSleep) {
+            //wait 
+        }
     },
 
     type: 'BasketballUtils'
@@ -181,13 +217,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>82</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-08 20:52:09</sys_updated_on>
+        <sys_updated_on>2022-09-13 20:59:07</sys_updated_on>
     </sys_script_include>
 </record_update>
