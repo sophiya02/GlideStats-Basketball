@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="opposing_team" label="Opposing Team" language="en" table="x_0294_nba_player_game_stats">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>opposing_team</element>
+            <help/>
+            <hint/>
+            <label>Opposing Team</label>
+            <language>en</language>
+            <name>x_0294_nba_player_game_stats</name>
+            <plural>Opposing Teams</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-13 22:02:12</sys_created_on>
+            <sys_id>79008eeb47b111106dc4e357536d4387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Opposing Team</sys_name>
+            <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_update_name>sys_documentation_x_0294_nba_player_game_stats_opposing_team_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-13 22:02:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

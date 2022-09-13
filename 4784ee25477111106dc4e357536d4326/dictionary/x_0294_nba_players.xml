@@ -8,6 +8,7 @@
         <element label="ID" max_length="4" name="id" type="string"/>
         <element label="Jersey Number" max_length="2" name="jersey_number" type="string"/>
         <element label="Last Name" max_length="100" name="last_name" type="string"/>
+        <element label="Most Recent Team" max_length="32" name="most_recent_team" reference="x_0294_nba_teams" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Name" max_length="200" name="name" type="string"/>
         <element label="Position" max_length="3" name="position" type="string"/>
         <element label="Rookie Year" max_length="4" name="rookie_year" type="string"/>
@@ -19,6 +20,9 @@
         </index>
         <index name="index2">
             <element name="sys_class_name"/>
+        </index>
+        <index name="index3">
+            <element name="most_recent_team"/>
         </index>
     </element>
 </database>

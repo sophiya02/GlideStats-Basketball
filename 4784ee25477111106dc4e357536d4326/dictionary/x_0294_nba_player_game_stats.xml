@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Player Game Stats" max_length="40" name="x_0294_nba_player_game_stats" type="collection">
+        <element label="Assists" max_length="10" name="assists" type="integer"/>
+        <element label="Blocks" max_length="10" name="blocks" type="integer"/>
+        <element label="Defensive Rebounds" max_length="10" name="defensive_rebounds" type="integer"/>
+        <element label="FG%" max_length="15" name="fg" type="decimal"/>
+        <element label="FGA" max_length="10" name="fga" type="integer"/>
+        <element label="FGM" max_length="10" name="fgm" type="integer"/>
+        <element label="Fouls" max_length="10" name="fouls" type="integer"/>
+        <element label="FT%" max_length="15" name="ft" type="decimal"/>
+        <element label="FTA" max_length="10" name="fta" type="integer"/>
+        <element label="FTM" max_length="10" name="ftm" type="integer"/>
+        <element label="Minutes" max_length="10" name="minutes" type="glide_duration"/>
+        <element label="Offensive Rebounds" max_length="10" name="offensive_rebounds" type="integer"/>
+        <element label="Opposing Team" max_length="32" name="opposing_team" reference="x_0294_nba_teams" type="reference"/>
+        <element label="Player" max_length="32" name="player" reference="x_0294_nba_players" type="reference"/>
+        <element label="+/-" max_length="10" name="plus_minus" type="integer"/>
+        <element label="Points" max_length="10" name="points" type="integer"/>
+        <element label="Steals" max_length="10" name="steals" type="integer"/>
+        <element label="Team" max_length="32" name="team" reference="x_0294_nba_teams" type="reference"/>
+        <element label="Total Rebounds" max_length="10" name="total_rebounds" type="integer"/>
+        <element label="Turnovers" max_length="10" name="turnovers" type="integer"/>
+        <element label="3P%" max_length="15" name="u_3p" type="decimal"/>
+        <element label="3PA" max_length="10" name="u_3pa" type="integer"/>
+        <element label="3PM" max_length="10" name="u_3pm" type="integer"/>
+        <index name="index">
+            <element name="opposing_team"/>
+        </index>
+        <index name="index2">
+            <element name="team"/>
+        </index>
+        <index name="index3">
+            <element name="player"/>
+        </index>
+    </element>
+</database>
