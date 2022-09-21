@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Most Recent Team Import" language="en" table="x_0294_nba_most_recent_team_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Most Recent Team Import</label>
+            <language>en</language>
+            <name>x_0294_nba_most_recent_team_import</name>
+            <plural>Most Recent Team Imports</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-21 19:54:18</sys_created_on>
+            <sys_id>ca7fe60247c211106dc4e357536d4353</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Most Recent Team Import</sys_name>
+            <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_update_name>sys_documentation_x_0294_nba_most_recent_team_import__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-21 19:54:18</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

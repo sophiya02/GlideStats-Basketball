@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Player Game Stats" max_length="40" name="x_0294_nba_player_game_stats" sizeclass="72" type="collection">
+    <element label="Player Game Stats" max_length="40" name="x_0294_nba_player_game_stats" sizeclass="422" type="collection">
         <element label="Assists" max_length="10" name="assists" type="integer"/>
         <element label="Blocks" max_length="10" name="blocks" type="integer"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
         <element label="Defensive Rebounds" max_length="10" name="defensive_rebounds" type="integer"/>
         <element label="FG%" max_length="15" name="fg" type="decimal"/>
         <element label="FGA" max_length="10" name="fga" type="integer"/>
