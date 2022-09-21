@@ -161,6 +161,7 @@ BasketballUtils.prototype = {
     getGameIDsByDate: function(date) {
         var r = new sn_ws.RESTMessageV2('API NBA', 'Games');
         var ids = [];
+		var requestBody = {};
         r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
         r.setQueryParameter("date", date);
         var res = r.execute();
@@ -168,10 +169,13 @@ BasketballUtils.prototype = {
         this.debug('Full game object: ' + response);
         var parser = JSON.parse(response);
         for (var i = 0; i < parser.response.length; i++) {
-            ids.push(parser.response[i].id);
+           var add = {id: parser.response[i].id, away: parser.response[i].teams.visitors.id, home: parser.response[i].teams.home.id};
+			ids.push(add);
         }
-        this.debug('Yesterday Game IDs: ' + ids);
-        return ids;
+		requestBody.info = ids;
+        this.debug('Yesterday Game IDs: ' + JSON.stringify(requestBody));
+        var idsString = JSON.stringify(requestBody);
+		return idsString;
     },
 
     getPlayerStatsForGame: function(game, date) {
@@ -213,9 +217,7 @@ BasketballUtils.prototype = {
             var a = new GlideDate();
       //      a.addDaysUTC(-1); UNCOMMENT AND COMMENT LINE BELOW AFTER TESTING
 			a.setValue('2022-04-10');
-			gs.info('kl a' + a + ' date ' + date);
             if (a == date) {
-				gs.info('kl in for loop');
                 var recent = new GlideRecord('x_0294_nba_most_recent_team_import');
 				recent.initialize();
                 recent.player_id = parser.response[i].player.id;
@@ -233,8 +235,11 @@ BasketballUtils.prototype = {
         a.setValue('2022-04-10');
         //a.addDaysUTC(-1); THIS IS THE RIGHT ONE ONCE THIS IS READY TO GO, COMMENT OUT THE LINE ABOVE AND UNCOMMENT THIS
         var ids = this.getGameIDsByDate(a);
-        for (var i = 0; i < ids.length; i++) {
-            this.getPlayerStatsForGame(ids[i], a);
+		var idsEnc = JSON.parse(ids);
+		this.debug('kl new call' + idsEnc);
+        for (var i = 0; i < idsEnc.info.length; i++) {
+			this.debug('kl id ' + idsEnc.info[i].id);
+            this.getPlayerStatsForGame(idsEnc.info[i].id, a);
             if (this.sleep == 'true') {
                 this._sleepytime(10000);
             }
@@ -254,13 +259,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>91</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-21 19:56:14</sys_updated_on>
+        <sys_updated_on>2022-09-21 21:40:54</sys_updated_on>
     </sys_script_include>
 </record_update>

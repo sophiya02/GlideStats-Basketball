@@ -13,6 +13,7 @@
         <element label="FTP" max_length="15" name="ftp" type="decimal"/>
         <element label="Minutes" max_length="10" name="minutes" type="string"/>
         <element label="offReb" max_length="10" name="offreb" type="integer"/>
+        <element label="Opposing Team ID" max_length="10" name="opposing_team_id" type="string"/>
         <element label="Player ID" max_length="10" name="player_id" type="integer"/>
         <element label="+/-" max_length="10" name="plus_minus" type="string"/>
         <element label="Points" max_length="10" name="points" type="integer"/>
