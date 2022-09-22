@@ -178,13 +178,14 @@ BasketballUtils.prototype = {
 		return idsString;
     },
 
-    getPlayerStatsForGame: function(game, date) {
+    getPlayerStatsForGame: function(game, date, away, home) {
         var r = new sn_ws.RESTMessageV2('API NBA', 'Player Stats');
         r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
         r.setQueryParameter("game", game);
         var res = r.execute();
         var response = res.getBody();
         this.debug('Game Player Statistics: ' + response);
+		this.debug('kl ' + away + ' ' + home);
         var parser = JSON.parse(response);
         for (var i = 0; i < parser.response.length; i++) {
             var gr = new GlideRecord('x_0294_nba_import_player_game_stats');
@@ -212,6 +213,7 @@ BasketballUtils.prototype = {
             gr.totreb = parser.response[i].totReb;
             gr.turnovers = parser.response[i].turnovers;
             gr.date = date;
+			gr.opposing_team_id = away;
             gr.insert();
 
             var a = new GlideDate();
@@ -239,7 +241,7 @@ BasketballUtils.prototype = {
 		this.debug('kl new call' + idsEnc);
         for (var i = 0; i < idsEnc.info.length; i++) {
 			this.debug('kl id ' + idsEnc.info[i].id);
-            this.getPlayerStatsForGame(idsEnc.info[i].id, a);
+            this.getPlayerStatsForGame(idsEnc.info[i].id, a, idsEnc.info[i].away, idsEnc.info[i].home);
             if (this.sleep == 'true') {
                 this._sleepytime(10000);
             }
@@ -259,13 +261,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>106</sys_mod_count>
+        <sys_mod_count>113</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-21 21:40:54</sys_updated_on>
+        <sys_updated_on>2022-09-22 17:18:19</sys_updated_on>
     </sys_script_include>
 </record_update>

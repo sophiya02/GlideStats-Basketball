@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Most Recent Team Import" max_length="40" name="x_0294_nba_most_recent_team_import" type="collection">
+    <element extends="sys_import_set_row" label="Most Recent Team Import" max_length="40" name="x_0294_nba_most_recent_team_import" sizeclass="732" type="collection">
         <element label="Player ID" max_length="10" name="player_id" type="string"/>
         <element label="Team ID" max_length="10" name="team_id" type="string"/>
     </element>

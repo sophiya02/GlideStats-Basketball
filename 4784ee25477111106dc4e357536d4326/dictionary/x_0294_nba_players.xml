@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Players" max_length="40" name="x_0294_nba_players" sizeclass="898" type="collection">
+    <element label="Players" max_length="40" name="x_0294_nba_players" sizeclass="874" type="collection">
         <element label="Birthday" max_length="40" name="birthday" type="glide_date"/>
         <element label="College" max_length="100" name="college" type="string"/>
         <element label="Country" max_length="100" name="country" type="string"/>
