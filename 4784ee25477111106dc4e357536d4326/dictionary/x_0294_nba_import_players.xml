@@ -3,6 +3,7 @@
         <element label="Birthday" max_length="20" name="birthday" type="string"/>
         <element label="College" max_length="100" name="college" type="string"/>
         <element label="Country" max_length="100" name="country" type="string"/>
+        <element label="Current Team" max_length="10" name="current_team" type="string"/>
         <element label="First Name" max_length="100" name="first_name" type="string"/>
         <element label="Height Feet" max_length="5" name="height_feet" type="string"/>
         <element label="Height Inches" max_length="5" name="height_inches" type="string"/>

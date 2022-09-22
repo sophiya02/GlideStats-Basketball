@@ -13,8 +13,6 @@ BasketballUtils.prototype = {
     CORRELATION_DISPLAY: "NBA Basketball",
     initialize: function() {
         this.verbose = gs.getProperty('x_0294_nba.verbose');
-        this.apinbakey = gs.getProperty("x_0294_nba.API NBA Key");
-        this.sleep = gs.getProperty("x_0294_nba.sleep");
     },
 
     debug: function(msg) {
@@ -23,169 +21,170 @@ BasketballUtils.prototype = {
         }
     },
 
-    getTeams: function() { //gets info for each NBA team, including unique ID. Due to the unchanging nature of NBA teams, this likely does not need to be run very often after an initial load
-        var r = new sn_ws.RESTMessageV2('API NBA', 'Teams');
-        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+    getTeams: function() {
+        var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Teams');
         var res = r.execute();
         var response = res.getBody();
         this.debug('Teams' + response);
         var parser = JSON.parse(response);
-        for (var i = 0; i < parser.response.length; i++) {
-            if (parser.response[i].nbaFranchise == true && parser.response[i].name != 'Home Team Stephen A') {
-                var gr = new GlideRecord('x_0294_nba_import_teams');
-                gr.initialize();
-                gr.city = parser.response[i].city;
-                gr.code = parser.response[i].code;
-                gr.conference = parser.response[i].leagues.standard.conference;
-                gr.division = parser.response[i].leagues.standard.division;
-                gr.id = parser.response[i].id;
-                gr.name = parser.response[i].name;
-                gr.insert();
-            }
-        }
-    },
+        for (var i = 0; i < parser.data.length; i++) {
 
-    getPlayers: function(season, team) { //Gets players on a team by providing the year and the ID of the team record. ID is found on the Teams table.
-        var r = new sn_ws.RESTMessageV2('API NBA', 'Players');
-        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
-        r.setQueryParameter("season", season);
-        r.setQueryParameter("team", team);
-        var res = r.execute();
-        var response = res.getBody();
-        this.debug('Players: ' + response);
-        var parser = JSON.parse(response);
-        for (var i = 0; i < parser.response.length; i++) {
-            var gr = new GlideRecord('x_0294_nba_import_players');
+            var gr = new GlideRecord('x_0294_nba_import_teams');
             gr.initialize();
-            gr.first_name = parser.response[i].firstname;
-            gr.last_name = parser.response[i].lastname;
-            gr.years_pro = parser.response[i].nba.pro;
-            gr.weight = parser.response[i].weight.pounds;
-            gr.height_inches = parser.response[i].height.inches;
-            gr.height_feet = parser.response[i].height.feets;
-            gr.rookie_year = parser.response[i].nba.start;
-            gr.college = parser.response[i].college;
-            gr.birthday = parser.response[i].birth.date;
-            gr.id = parser.response[i].id;
-            gr.country = parser.response[i].birth.country;
-
-            var jersey = '';
-            try {
-                jersey = parser.response[i].leagues.standard.jersey;
-            } catch (e) {
-                this.debug('No listed jersey number.');
-            }
-
-            gr.jersey_number = jersey;
-
-            var position = '';
-            try {
-                position = parser.response[i].leagues.standard.pos;
-            } catch (e) {
-                this.debug('No listed position.');
-            }
-
-            gr.position = position;
-
+            gr.id = parser.data[i].id;
+            gr.code = parser.data[i].abbreviation;
+            gr.city = parser.data[i].city;
+            gr.conference = parser.data[i].conference;
+            gr.division = parser.data[i].division;
+            gr.name = parser.data[i].full_name;
             gr.insert();
-        }
 
+        }
     },
 
-    getAllPlayersForYear: function(year) { //Loops through each team for a particular year to grab all of the players who were in the NBA that year.
-        var gr = new GlideRecord("x_0294_nba_teams");
-        gr.query();
-        gs.info('Running teams number ' + gr.getRowCount());
-        while (gr.next()) {
-            this.getPlayers(year, gr.id.toString());
-            if (this.sleep == 'true') {
-                this._sleepytime(10000);
+    getAllPlayers: function() {
+
+        var pages = new sn_ws.RESTMessageV2('balldontlie.io', 'Players');
+        pages.setQueryParameter("per_page", '100');
+        var pagesRes = pages.execute();
+        var pagesResponse = pagesRes.getBody();
+        var pagesParse = JSON.parse(pagesResponse);
+        var totalPages = pagesParse.meta.total_pages;
+
+        for (var sheet = 1; sheet <= totalPages; sheet++) {
+
+            var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Players');
+            r.setQueryParameter("per_page", '100');
+            r.setQueryParameter("page", sheet);
+            var res = r.execute();
+            var response = res.getBody();
+            this.debug('Players' + response);
+            var parser = JSON.parse(response);
+            this.debug('next page' + parser.meta.next_page);
+            for (var i = 0; i < parser.data.length; i++) {
+                this.debug('hi mom');
+                var gr = new GlideRecord('x_0294_nba_import_players');
+                gr.initialize();
+                gr.id = parser.data[i].id;
+                gr.first_name = parser.data[i].first_name;
+                gr.last_name = parser.data[i].last_name;
+                gr.position = parser.data[i].position;
+                gr.current_team = parser.data[i].team.id;
+
+                var heightFeet = '';
+                var heightInches = '';
+                var weightPounds = '';
+
+                try {
+                    heightFeet = parser.data[i].height_feet;
+                } catch (e) {
+                    this.debug('No listed height feet.');
+                }
+
+                try {
+                    heightInches = parser.data[i].height_inches;
+                } catch (e) {
+                    this.debug('No listed height inches.');
+                }
+
+                try {
+                    weightPounds = parser.data[i].weight_pounds;
+                } catch (e) {
+                    this.debug('No listed weight in pounds.');
+                }
+
+                gr.height_inches = heightInches;
+                gr.height_feet = heightFeet;
+                gr.weight = weightPounds;
+
+                gr.insert();
+
+
+
+
             }
+            this._sleepytime(1000);
         }
 
     },
 
-    getTeamStatsForYear: function(season, team) {
-        var r = new sn_ws.RESTMessageV2('API NBA', 'Team Stats');
-        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
-        r.setQueryParameter("season", season);
-        r.setQueryParameter("id", team);
+    getGamesByDate: function(dates) {
+
+        var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
+        r.setQueryParameter("dates%5B%5D", dates);
+        r.setQueryParameter("per_page", "100");
         var res = r.execute();
         var response = res.getBody();
-        this.debug('Team Statistics: ' + response);
+        this.debug('Games: ' + response);
         var parser = JSON.parse(response);
-        var gr = new GlideRecord('x_0294_nba_import_team_statistics');
-        gr.initialize();
-        gr.year = season;
-        gr.id = team;
-        gr.fgp = parser.response[0].fgp;
-        gr.u_3pp = parser.response[0].tpp;
-        gr.ftp = parser.response[0].ftp;
-        gr.field_goals_attempted = parser.response[0].fga;
-        gr.defensive_rebounds = parser.response[0].defReb;
-        gr.plus_minus = parser.response[0].plusMinus;
-        gr.turnovers = parser.response[0].turnovers;
-        gr.fouls = parser.response[0].pFouls;
-        gr.free_throws_attempted = parser.response[0].fta;
-        gr.assists = parser.response[0].assists;
-        gr.second_chance_points = parser.response[0].secondChancePoints;
-        gr.u_3p_attempted = parser.response[0].tpa;
-        gr.u_3p_made = parser.response[0].tpm;
-        gr.points_in_the_paint = parser.response[0].pointsInPaint;
-        gr.free_throws_made = parser.response[0].ftm;
-        gr.offensive_rebounds = parser.response[0].offReb;
-        gr.field_goals_made = parser.response[0].fgm;
-        gr.points_off_turnovers = parser.response[0].pointsOffTurnovers;
-        gr.total_rebounds = parser.response[0].totReb;
-        gr.steals = parser.response[0].steals;
-        gr.points = parser.response[0].points;
-        gr.blocks = parser.response[0].blocks;
-        gr.games = parser.response[0].games;
-        gr.insert();
+        for (var i = 0; i < parser.data.length; i++) {
+            var gr = new GlideRecord("x_0294_nba_import_games_to_games");
+            gr.initialize();
+            gr.id = parser.data[i].id;
+            gr.date = parser.data[i].date;
+            gr.home_team = parser.data[i].home_team.id;
+            gr.home_team_score = parser.data[i].home_team_score;
+            gr.visitor_team = parser.data[i].visitor_team.id;
+            gr.visitor_team_score = parser.data[i].visitor_team_score;
+            gr.season = parser.data[i].season;
+            gr.postseason = parser.data[i].postseason;
+            gr.insert();
+
+        }
 
     },
 
-    getAllTeamStatsForYear: function(year) {
-        var gr = new GlideRecord("x_0294_nba_teams");
-        gr.query();
-        gs.info('Running teams number ' + gr.getRowCount());
-        while (gr.next()) {
-            this.getTeamStatsForYear(year, gr.id.toString());
-            if (this.sleep == 'true') {
-                this._sleepytime(10000);
+    getGamesByDateRange: function(start, end) {
+
+        var pages = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
+        pages.setQueryParameter("start_date", start);
+        pages.setQueryParameter("end_date", end);
+        pages.setQueryParameter("per_page", "100");
+        var pagesRes = pages.execute();
+        var pagesResponse = pagesRes.getBody();
+        var pagesParse = JSON.parse(pagesResponse);
+        var totalPages = pagesParse.meta.total_pages;
+
+        for (var sheet = 1; sheet <= totalPages; sheet++) {
+
+            var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
+            r.setQueryParameter("start_date", start);
+            r.setQueryParameter("end_date", end);
+            r.setQueryParameter("per_page", "100");
+            r.setQueryParameter("page", sheet);
+            var res = r.execute();
+            var response = res.getBody();
+            this.debug('Games: ' + response);
+            var parser = JSON.parse(response);
+            for (var i = 0; i < parser.data.length; i++) {
+                var gr = new GlideRecord("x_0294_nba_import_games_to_games");
+                gr.initialize();
+                gr.id = parser.data[i].id;
+                gr.date = parser.data[i].date;
+                gr.home_team = parser.data[i].home_team.id;
+                gr.home_team_score = parser.data[i].home_team_score;
+                gr.visitor_team = parser.data[i].visitor_team.id;
+                gr.visitor_team_score = parser.data[i].visitor_team_score;
+                gr.season = parser.data[i].season;
+                gr.postseason = parser.data[i].postseason;
+                gr.insert();
+
+
+
             }
+            this._sleepytime(1000);
         }
 
     },
 
-    getGameIDsByDate: function(date) {
-        var r = new sn_ws.RESTMessageV2('API NBA', 'Games');
-        var ids = [];
-		var requestBody = {};
-        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
-        r.setQueryParameter("date", date);
-        var res = r.execute();
-        var response = res.getBody();
-        this.debug('Full game object: ' + response);
-        var parser = JSON.parse(response);
-        for (var i = 0; i < parser.response.length; i++) {
-           var add = {id: parser.response[i].id, away: parser.response[i].teams.visitors.id, home: parser.response[i].teams.home.id};
-			ids.push(add);
-        }
-		requestBody.info = ids;
-        this.debug('Yesterday Game IDs: ' + JSON.stringify(requestBody));
-        var idsString = JSON.stringify(requestBody);
-		return idsString;
-    },
-
-    getPlayerStatsForGame: function(game, date, away, home) {
+    getPlayerStatsForGames: function(game, date, away, home) {
         var r = new sn_ws.RESTMessageV2('API NBA', 'Player Stats');
         r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
         r.setQueryParameter("game", game);
         var res = r.execute();
         var response = res.getBody();
         this.debug('Game Player Statistics: ' + response);
-		this.debug('kl ' + away + ' ' + home);
+        this.debug('kl ' + away + ' ' + home);
         var parser = JSON.parse(response);
         for (var i = 0; i < parser.response.length; i++) {
             var gr = new GlideRecord('x_0294_nba_import_player_game_stats');
@@ -213,18 +212,208 @@ BasketballUtils.prototype = {
             gr.totreb = parser.response[i].totReb;
             gr.turnovers = parser.response[i].turnovers;
             gr.date = date;
-			gr.opposing_team_id = away;
+            gr.opposing_team_id = away;
             gr.insert();
 
             var a = new GlideDate();
-      //      a.addDaysUTC(-1); UNCOMMENT AND COMMENT LINE BELOW AFTER TESTING
-			a.setValue('2022-04-10');
+            //      a.addDaysUTC(-1); UNCOMMENT AND COMMENT LINE BELOW AFTER TESTING
+            a.setValue('2022-04-10');
             if (a == date) {
                 var recent = new GlideRecord('x_0294_nba_most_recent_team_import');
-				recent.initialize();
+                recent.initialize();
                 recent.player_id = parser.response[i].player.id;
                 recent.team_id = parser.response[i].team.id;
-				recent.insert();
+                recent.insert();
+            }
+        }
+
+
+    },
+
+    /* getPlayers: function(season, team) { //Gets players on a team by providing the year and the ID of the team record. ID is found on the Teams table.
+         var r = new sn_ws.RESTMessageV2('API NBA', 'Players');
+         r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+         r.setQueryParameter("season", season);
+         r.setQueryParameter("team", team);
+         var res = r.execute();
+         var response = res.getBody();
+         this.debug('Players: ' + response);
+         var parser = JSON.parse(response);
+         for (var i = 0; i < parser.response.length; i++) {
+             var gr = new GlideRecord('x_0294_nba_import_players');
+             gr.initialize();
+             gr.first_name = parser.response[i].firstname;
+             gr.last_name = parser.response[i].lastname;
+             gr.years_pro = parser.response[i].nba.pro;
+             gr.weight = parser.response[i].weight.pounds;
+             gr.height_inches = parser.response[i].height.inches;
+             gr.height_feet = parser.response[i].height.feets;
+             gr.rookie_year = parser.response[i].nba.start;
+             gr.college = parser.response[i].college;
+             gr.birthday = parser.response[i].birth.date;
+             gr.id = parser.response[i].id;
+             gr.country = parser.response[i].birth.country;
+
+             var jersey = '';
+             try {
+                 jersey = parser.response[i].leagues.standard.jersey;
+             } catch (e) {
+                 this.debug('No listed jersey number.');
+             }
+
+             gr.jersey_number = jersey;
+
+             var position = '';
+             try {
+                 position = parser.response[i].leagues.standard.pos;
+             } catch (e) {
+                 this.debug('No listed position.');
+             }
+
+             gr.position = position;
+
+             gr.insert();
+         }
+
+     },*/
+
+    /* getAllPlayersForYear: function(year) { //Loops through each team for a particular year to grab all of the players who were in the NBA that year.
+         var gr = new GlideRecord("x_0294_nba_teams");
+         gr.query();
+         gs.info('Running teams number ' + gr.getRowCount());
+         while (gr.next()) {
+             this.getPlayers(year, gr.id.toString());
+             if (this.sleep == 'true') {
+                 this._sleepytime(10000);
+             }
+         }
+
+     },*/
+
+    /* getTeamStatsForYear: function(season, team) {
+         var r = new sn_ws.RESTMessageV2('API NBA', 'Team Stats');
+         r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+         r.setQueryParameter("season", season);
+         r.setQueryParameter("id", team);
+         var res = r.execute();
+         var response = res.getBody();
+         this.debug('Team Statistics: ' + response);
+         var parser = JSON.parse(response);
+         var gr = new GlideRecord('x_0294_nba_import_team_statistics');
+         gr.initialize();
+         gr.year = season;
+         gr.id = team;
+         gr.fgp = parser.response[0].fgp;
+         gr.u_3pp = parser.response[0].tpp;
+         gr.ftp = parser.response[0].ftp;
+         gr.field_goals_attempted = parser.response[0].fga;
+         gr.defensive_rebounds = parser.response[0].defReb;
+         gr.plus_minus = parser.response[0].plusMinus;
+         gr.turnovers = parser.response[0].turnovers;
+         gr.fouls = parser.response[0].pFouls;
+         gr.free_throws_attempted = parser.response[0].fta;
+         gr.assists = parser.response[0].assists;
+         gr.second_chance_points = parser.response[0].secondChancePoints;
+         gr.u_3p_attempted = parser.response[0].tpa;
+         gr.u_3p_made = parser.response[0].tpm;
+         gr.points_in_the_paint = parser.response[0].pointsInPaint;
+         gr.free_throws_made = parser.response[0].ftm;
+         gr.offensive_rebounds = parser.response[0].offReb;
+         gr.field_goals_made = parser.response[0].fgm;
+         gr.points_off_turnovers = parser.response[0].pointsOffTurnovers;
+         gr.total_rebounds = parser.response[0].totReb;
+         gr.steals = parser.response[0].steals;
+         gr.points = parser.response[0].points;
+         gr.blocks = parser.response[0].blocks;
+         gr.games = parser.response[0].games;
+         gr.insert();
+
+     },*/
+
+    /* getAllTeamStatsForYear: function(year) {
+         var gr = new GlideRecord("x_0294_nba_teams");
+         gr.query();
+         gs.info('Running teams number ' + gr.getRowCount());
+         while (gr.next()) {
+             this.getTeamStatsForYear(year, gr.id.toString());
+             if (this.sleep == 'true') {
+                 this._sleepytime(10000);
+             }
+         }
+
+     },*/
+
+    /*  getGameIDsByDate: function(date) {
+          var r = new sn_ws.RESTMessageV2('API NBA', 'Games');
+          var ids = [];
+          var requestBody = {};
+          r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+          r.setQueryParameter("date", date);
+          var res = r.execute();
+          var response = res.getBody();
+          this.debug('Full game object: ' + response);
+          var parser = JSON.parse(response);
+          for (var i = 0; i < parser.response.length; i++) {
+              var add = {
+                  id: parser.response[i].id,
+                  away: parser.response[i].teams.visitors.id,
+                  home: parser.response[i].teams.home.id
+              };
+              ids.push(add);
+          }
+          requestBody.info = ids;
+          this.debug('Yesterday Game IDs: ' + JSON.stringify(requestBody));
+          var idsString = JSON.stringify(requestBody);
+          return idsString;
+      },*/
+
+    getPlayerStatsForGame: function(game, date, away, home) {
+        var r = new sn_ws.RESTMessageV2('API NBA', 'Player Stats');
+        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
+        r.setQueryParameter("game", game);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Game Player Statistics: ' + response);
+        this.debug('kl ' + away + ' ' + home);
+        var parser = JSON.parse(response);
+        for (var i = 0; i < parser.response.length; i++) {
+            var gr = new GlideRecord('x_0294_nba_import_player_game_stats');
+            gr.initialize();
+            gr.points = parser.response[i].points;
+            gr.player_id = parser.response[i].player.id;
+            gr.plus_minus = parser.response[i].plusMinus;
+            gr.u_3pa = parser.response[i].tpa;
+            gr.u_3pp = parser.response[i].tpp;
+            gr.u_3pm = parser.response[i].tpm;
+            gr.assists = parser.response[i].assists;
+            gr.blocks = parser.response[i].blocks;
+            gr.defreb = parser.response[i].defReb;
+            gr.fga = parser.response[i].fga;
+            gr.fgm = parser.response[i].fgm;
+            gr.fgp = parser.response[i].fgp;
+            gr.fouls = parser.response[i].pFouls;
+            gr.fta = parser.response[i].fta;
+            gr.ftm = parser.response[i].ftm;
+            gr.ftp = parser.response[i].ftp;
+            gr.minutes = "00:" + parser.response[i].min;
+            gr.offreb = parser.response[i].offReb;
+            gr.steals = parser.response[i].steals;
+            gr.team_id = parser.response[i].team.id;
+            gr.totreb = parser.response[i].totReb;
+            gr.turnovers = parser.response[i].turnovers;
+            gr.date = date;
+            gr.opposing_team_id = away;
+            gr.insert();
+
+            var a = new GlideDate();
+            //      a.addDaysUTC(-1); UNCOMMENT AND COMMENT LINE BELOW AFTER TESTING
+            a.setValue('2022-04-10');
+            if (a == date) {
+                var recent = new GlideRecord('x_0294_nba_most_recent_team_import');
+                recent.initialize();
+                recent.player_id = parser.response[i].player.id;
+                recent.team_id = parser.response[i].team.id;
+                recent.insert();
             }
         }
 
@@ -237,10 +426,10 @@ BasketballUtils.prototype = {
         a.setValue('2022-04-10');
         //a.addDaysUTC(-1); THIS IS THE RIGHT ONE ONCE THIS IS READY TO GO, COMMENT OUT THE LINE ABOVE AND UNCOMMENT THIS
         var ids = this.getGameIDsByDate(a);
-		var idsEnc = JSON.parse(ids);
-		this.debug('kl new call' + idsEnc);
+        var idsEnc = JSON.parse(ids);
+        this.debug('kl new call' + idsEnc);
         for (var i = 0; i < idsEnc.info.length; i++) {
-			this.debug('kl id ' + idsEnc.info[i].id);
+            this.debug('kl id ' + idsEnc.info[i].id);
             this.getPlayerStatsForGame(idsEnc.info[i].id, a, idsEnc.info[i].away, idsEnc.info[i].home);
             if (this.sleep == 'true') {
                 this._sleepytime(10000);
@@ -261,13 +450,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>113</sys_mod_count>
+        <sys_mod_count>159</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-22 17:18:19</sys_updated_on>
+        <sys_updated_on>2022-09-22 22:58:18</sys_updated_on>
     </sys_script_include>
 </record_update>

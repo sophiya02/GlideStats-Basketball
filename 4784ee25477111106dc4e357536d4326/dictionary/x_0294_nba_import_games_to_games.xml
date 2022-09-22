@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Import Games to Games" max_length="40" name="x_0294_nba_import_games_to_games" type="collection">
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Home Team" max_length="10" name="home_team" type="string"/>
+        <element label="Home Team Score" max_length="10" name="home_team_score" type="string"/>
+        <element label="ID" max_length="10" name="id" type="string"/>
+        <element label="Postseason" max_length="10" name="postseason" type="string"/>
+        <element label="Season" max_length="10" name="season" type="string"/>
+        <element label="Visitor Team" max_length="10" name="visitor_team" type="string"/>
+        <element label="Visitor Team Score" max_length="10" name="visitor_team_score" type="string"/>
+    </element>
+</database>
