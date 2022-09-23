@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Import Season Averages" max_length="40" name="x_0294_nba_import_season_averages" type="collection">
+        <element label="Assists" max_length="10" name="assists" type="string"/>
+        <element label="Blocks" max_length="10" name="blocks" type="string"/>
+        <element label="Defensive Rebounds" max_length="10" name="defensive_rebounds" type="string"/>
+        <element label="Field Goal %" max_length="10" name="field_goal" type="string"/>
+        <element label="Field Goals Attempted" max_length="10" name="field_goals_attempted" type="string"/>
+        <element label="Field Goals Made" max_length="10" name="field_goals_made" type="string"/>
+        <element label="Fouls" max_length="10" name="fouls" type="string"/>
+        <element label="Free-Throw %" max_length="10" name="free_throw" type="string"/>
+        <element label="Free-Throws Attempted" max_length="10" name="free_throws_attempted" type="string"/>
+        <element label="Free-Throws Made" max_length="10" name="free_throws_made" type="string"/>
+        <element label="Games Played" max_length="10" name="games_played" type="string"/>
+        <element label="Minutes" max_length="10" name="minutes" type="string"/>
+        <element label="Offensive Rebounds" max_length="10" name="offensive_rebounds" type="string"/>
+        <element label="Player" max_length="10" name="player" type="string"/>
+        <element label="Points" max_length="10" name="points" type="string"/>
+        <element label="Season" max_length="10" name="season" type="string"/>
+        <element label="Steals" max_length="10" name="steals" type="string"/>
+        <element label="Total Rebounds" max_length="10" name="total_rebounds" type="string"/>
+        <element label="Turnovers" max_length="10" name="turnovers" type="string"/>
+        <element label="3-Point Field Goal %" max_length="10" name="u_3_point_field_goal" type="string"/>
+        <element label="3-Point Field Goals Attempted" max_length="10" name="u_3_point_field_goals_attempted" type="string"/>
+        <element label="3-Point Field Goals Made" max_length="10" name="u_3_point_field_goals_made" type="string"/>
+    </element>
+</database>

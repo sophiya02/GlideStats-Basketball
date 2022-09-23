@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Season Averages" max_length="40" name="x_0294_nba_season_averages" type="collection">
+        <element label="Assists" max_length="15" name="assists" type="decimal"/>
+        <element label="Blocks" max_length="15" name="blocks" type="decimal"/>
+        <element label="Defensive Rebounds" max_length="15" name="defensive_rebounds" type="decimal"/>
+        <element label="Field Goal %" max_length="15" name="field_goal" type="decimal"/>
+        <element label="Field Goals Attempted" max_length="15" name="field_goals_attempted" type="decimal"/>
+        <element label="Field Goals Made" max_length="15" name="field_goals_made" type="decimal"/>
+        <element label="Fouls" max_length="15" name="fouls" type="decimal"/>
+        <element label="Free-Throw %" max_length="15" name="free_throw" type="decimal"/>
+        <element label="Free-Throws Attempted" max_length="15" name="free_throws_attempted" type="decimal"/>
+        <element label="Free-Throws Made" max_length="15" name="free_throws_made" type="decimal"/>
+        <element label="Games Played" max_length="10" name="games_played" type="integer"/>
+        <element label="Minutes" max_length="40" name="minutes" type="glide_duration"/>
+        <element label="Offensive Rebounds" max_length="15" name="offensive_rebounds" type="decimal"/>
+        <element label="Player" max_length="32" name="player" reference="x_0294_nba_players" type="reference"/>
+        <element label="Points" max_length="15" name="points" type="decimal"/>
+        <element label="Season" max_length="10" name="season" type="string"/>
+        <element label="Steals" max_length="15" name="steals" type="decimal"/>
+        <element label="Total Rebounds" max_length="15" name="total_rebounds" type="decimal"/>
+        <element label="Turnovers" max_length="15" name="turnovers" type="decimal"/>
+        <element label="3-Point Field Goal %" max_length="15" name="u_3_point_field_goal" type="decimal"/>
+        <element label="3-Point Field Goals Attempted" max_length="15" name="u_3_point_field_goals_attempted" type="decimal"/>
+        <element label="3-Point Field Goals Made" max_length="15" name="u_3_point_field_goals_made" type="decimal"/>
+        <index name="index">
+            <element name="player"/>
+        </index>
+    </element>
+</database>
