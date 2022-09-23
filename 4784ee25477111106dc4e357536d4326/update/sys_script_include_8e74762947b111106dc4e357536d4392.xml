@@ -177,54 +177,63 @@ BasketballUtils.prototype = {
 
     },
 
-    getPlayerStatsForGames: function(game, date, away, home) {
-        var r = new sn_ws.RESTMessageV2('API NBA', 'Player Stats');
-        r.setRequestHeader("X-RapidAPI-Key", this.apinbakey);
-        r.setQueryParameter("game", game);
+    getPlayerStatsByGame: function(game) {
+        var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Stats');
+        r.setQueryParameter("game_ids%5B%5D", game);
         var res = r.execute();
         var response = res.getBody();
         this.debug('Game Player Statistics: ' + response);
-        this.debug('kl ' + away + ' ' + home);
         var parser = JSON.parse(response);
-        for (var i = 0; i < parser.response.length; i++) {
+        for (var i = 0; i < parser.data.length; i++) {
             var gr = new GlideRecord('x_0294_nba_import_player_game_stats');
             gr.initialize();
-            gr.points = parser.response[i].points;
-            gr.player_id = parser.response[i].player.id;
-            gr.plus_minus = parser.response[i].plusMinus;
-            gr.u_3pa = parser.response[i].tpa;
-            gr.u_3pp = parser.response[i].tpp;
-            gr.u_3pm = parser.response[i].tpm;
-            gr.assists = parser.response[i].assists;
-            gr.blocks = parser.response[i].blocks;
-            gr.defreb = parser.response[i].defReb;
-            gr.fga = parser.response[i].fga;
-            gr.fgm = parser.response[i].fgm;
-            gr.fgp = parser.response[i].fgp;
-            gr.fouls = parser.response[i].pFouls;
-            gr.fta = parser.response[i].fta;
-            gr.ftm = parser.response[i].ftm;
-            gr.ftp = parser.response[i].ftp;
-            gr.minutes = "00:" + parser.response[i].min;
-            gr.offreb = parser.response[i].offReb;
-            gr.steals = parser.response[i].steals;
-            gr.team_id = parser.response[i].team.id;
-            gr.totreb = parser.response[i].totReb;
-            gr.turnovers = parser.response[i].turnovers;
-            gr.date = date;
-            gr.opposing_team_id = away;
+            gr.player_id = parser.data[i].player.id;
+            gr.assists = parser.data[i].ast;
+            gr.blocks = parser.data[i].blk;
+            gr.defreb = parser.data[i].dreb;
+			gr.game_id = parser.data[i].game.id;
+            
+			var tpp = parser.data[i].fg3_pct;
+			gr.u_3pp = tpp;
+			
+            gr.u_3pa = parser.data[i].fg3a;
+            gr.u_3pm = parser.data[i].fg3m;
+          
+			var fgp = parser.data[i].fg_pct;
+			gr.fgp = fgp;
+			
+            gr.fga = parser.data[i].fga;
+            gr.fgm = parser.data[i].fgm;
+			
+			var ftp = parser.data[i].ft_pct;
+			gr.ftp = ftp;
+			
+            gr.fta = parser.data[i].fta;
+            gr.ftm = parser.data[i].ftm;
+            gr.date = parser.data[i].game.date;
+            gr.team_id = parser.data[i].game.home_team_id;
+            gr.opposing_team_id = parser.data[i].game.visitor_team_id;
+            gr.minutes = "00:" + parser.data[i].min;
+            gr.offreb = parser.data[i].oreb;
+            gr.fouls = parser.data[i].pf;
+            gr.points = parser.data[i].pts;
+            gr.totreb = parser.data[i].reb;
+            gr.steals = parser.data[i].stl;
+            gr.turnovers = parser.data[i].turnover;
+
             gr.insert();
 
             var a = new GlideDate();
             //      a.addDaysUTC(-1); UNCOMMENT AND COMMENT LINE BELOW AFTER TESTING
             a.setValue('2022-04-10');
-            if (a == date) {
+			this.debug('kl date compare ' + a + ' thats a, next is from obj ' + parser.data[i].game.date);
+      /*      if (a == parser.data[i].game.date) {
                 var recent = new GlideRecord('x_0294_nba_most_recent_team_import');
                 recent.initialize();
                 recent.player_id = parser.response[i].player.id;
                 recent.team_id = parser.response[i].team.id;
                 recent.insert();
-            }
+            }*/
         }
 
 
@@ -450,13 +459,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>159</sys_mod_count>
+        <sys_mod_count>165</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-22 22:58:18</sys_updated_on>
+        <sys_updated_on>2022-09-23 16:25:19</sys_updated_on>
     </sys_script_include>
 </record_update>

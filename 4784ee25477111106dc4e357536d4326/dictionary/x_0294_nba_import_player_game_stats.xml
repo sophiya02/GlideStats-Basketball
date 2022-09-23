@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Import Player Game Stats" max_length="40" name="x_0294_nba_import_player_game_stats" sizeclass="2233" type="collection">
+    <element extends="sys_import_set_row" label="Import Player Game Stats" max_length="40" name="x_0294_nba_import_player_game_stats" sizeclass="3859" type="collection">
         <element label="Assists" max_length="10" name="assists" type="integer"/>
         <element label="Blocks" max_length="10" name="blocks" type="integer"/>
         <element label="Date" max_length="40" name="date" type="glide_date"/>
@@ -11,6 +11,7 @@
         <element label="FTA" max_length="10" name="fta" type="integer"/>
         <element label="FTM" max_length="10" name="ftm" type="integer"/>
         <element label="FTP" max_length="15" name="ftp" type="decimal"/>
+        <element label="Game ID" max_length="10" name="game_id" type="string"/>
         <element label="Minutes" max_length="10" name="minutes" type="string"/>
         <element label="offReb" max_length="10" name="offreb" type="integer"/>
         <element label="Opposing Team ID" max_length="10" name="opposing_team_id" type="string"/>

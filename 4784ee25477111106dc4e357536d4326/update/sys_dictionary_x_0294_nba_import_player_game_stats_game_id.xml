@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="plus_minus" table="x_0294_nba_player_game_stats">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="game_id" table="x_0294_nba_import_player_game_stats">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>+/-</column_label>
+        <column_label>Game ID</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,15 +27,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>plus_minus</element>
+        <element>game_id</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
         <max_length>10</max_length>
-        <name>x_0294_nba_player_game_stats</name>
+        <name>x_0294_nba_import_player_game_stats</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -52,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-09-13 22:02:11</sys_created_on>
-        <sys_id>176ff12b47b111106dc4e357536d43f9</sys_id>
+        <sys_created_on>2022-09-23 16:19:22</sys_created_on>
+        <sys_id>1561d872470651106dc4e357536d4330</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>+/-</sys_name>
+        <sys_name>Game ID</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy/>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
-        <sys_update_name>sys_dictionary_x_0294_nba_player_game_stats_plus_minus</sys_update_name>
+        <sys_update_name>sys_dictionary_x_0294_nba_import_player_game_stats_game_id</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-13 22:02:11</sys_updated_on>
+        <sys_updated_on>2022-09-23 16:19:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
