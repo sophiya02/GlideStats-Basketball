@@ -5,34 +5,31 @@
         <condition/>
         <conditional>false</conditional>
         <entered_time>1970-01-01 03:00:00</entered_time>
-        <name>Get Yesterday's Games and Player Stats</name>
+        <name>Get Teams</name>
         <offset/>
         <offset_type>0</offset_type>
         <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
-        <run_period/>
+        <run_period>1970-01-01 02:00:00</run_period>
         <run_start>2022-09-07 20:34:57</run_start>
         <run_time>1970-01-01 03:00:00</run_time>
-        <run_type>daily</run_type>
-        <script><![CDATA[var a = new GlideDate();
-a.addDaysUTC(-1);
-new BasketballUtils().getGamesByDate(a);
-new BasketballUtils().getYesterdayStatsForAllPlayers();
-new BasketballUtils().getUpdatedSeasonAvgs();]]></script>
+        <run_type>periodically</run_type>
+        <script><![CDATA[new BasketballUtils().getTeams();
+//only running this every two hours in an attempt to keep this instance alive, you'll only ever need to run this again if the NBA changes, adds, or removes a team]]></script>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-09-07 20:37:49</sys_created_on>
-        <sys_id>8182f6a547b111106dc4e357536d4366</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Get Yesterday's Games and Player Stats</sys_name>
+        <sys_created_on>2022-09-26 16:06:30</sys_created_on>
+        <sys_id>c24bab23474211106dc4e357536d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Teams</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy/>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
-        <sys_update_name>sysauto_script_8182f6a547b111106dc4e357536d4366</sys_update_name>
+        <sys_update_name>sysauto_script_c24bab23474211106dc4e357536d43d6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-26 17:10:12</sys_updated_on>
+        <sys_updated_on>2022-09-26 16:06:30</sys_updated_on>
         <time_zone>floating</time_zone>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>

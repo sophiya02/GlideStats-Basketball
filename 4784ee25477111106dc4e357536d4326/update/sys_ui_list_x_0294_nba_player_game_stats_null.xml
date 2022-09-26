@@ -2,198 +2,198 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_0294_nba_player_game_stats" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>game</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <element>date</element>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>d0f31836470651106dc4e357536d432a</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>35dcafa3474211106dc4e357536d438e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>date</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <element>game</element>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>54f31836470651106dc4e357536d432a</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>f9dcafa3474211106dc4e357536d438e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>player</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>d4f31836470651106dc4e357536d432a</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>7ddcafa3474211106dc4e357536d438e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>team</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>58f31836470651106dc4e357536d432a</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>fddcafa3474211106dc4e357536d438e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>opposing_team</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>d8f31836470651106dc4e357536d432a</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>71dcafa3474211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>minutes</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>5cf31836470651106dc4e357536d432a</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>f1dcafa3474211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>points</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>dcf31836470651106dc4e357536d432a</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>75dcafa3474211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>steals</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>50f31836470651106dc4e357536d432b</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>f5dcafa3474211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assists</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>d0f31836470651106dc4e357536d432b</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>79dcafa3474211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>blocks</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>54f31836470651106dc4e357536d432b</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>f9dcafa3474211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>total_rebounds</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>10</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>d4f31836470651106dc4e357536d432b</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>7ddcafa3474211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>turnovers</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>11</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>58f31836470651106dc4e357536d432b</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>fddcafa3474211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>fouls</element>
-            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">18f31836470651106dc4e357536d4329</list_id>
+            <list_id display_value="x_0294_nba_player_game_stats" element="NULL" name="x_0294_nba_player_game_stats" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b9dcafa3474211106dc4e357536d438c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>12</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
-            <sys_id>94f39476470651106dc4e357536d4304</sys_id>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
+            <sys_id>71dcafa3474211106dc4e357536d4390</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -207,10 +207,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 16:30:13</sys_created_on>
+            <sys_created_on>2022-09-26 16:13:18</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>18f31836470651106dc4e357536d4329</sys_id>
+            <sys_id>b9dcafa3474211106dc4e357536d438c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_0294_nba_player_game_stats</sys_name>
             <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
@@ -218,7 +218,7 @@
             <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
             <sys_update_name>sys_ui_list_x_0294_nba_player_game_stats_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 16:30:13</sys_updated_on>
+            <sys_updated_on>2022-09-26 16:13:18</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Season Averages" max_length="40" name="x_0294_nba_season_averages" type="collection">
+    <element label="Season Averages" max_length="40" name="x_0294_nba_season_averages" sizeclass="15" type="collection">
         <element label="Assists" max_length="15" name="assists" type="decimal"/>
         <element label="Blocks" max_length="15" name="blocks" type="decimal"/>
         <element label="Defensive Rebounds" max_length="15" name="defensive_rebounds" type="decimal"/>

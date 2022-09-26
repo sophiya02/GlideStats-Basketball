@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Games" max_length="40" name="x_0294_nba_games" sizeclass="304" type="collection">
+    <element label="Games" max_length="40" name="x_0294_nba_games" sizeclass="5042" type="collection">
         <element label="Date" max_length="40" name="date" type="glide_date"/>
         <element label="Home Team" max_length="32" name="home_team" reference="x_0294_nba_teams" type="reference"/>
         <element label="Home Team Score" max_length="3" name="home_team_score" type="integer"/>
