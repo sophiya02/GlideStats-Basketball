@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>unload</directory>
+        <documentkey>3ca5d3a5473511106dc4e357536d4375</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_0294_nba_teams">
+    <x_0294_nba_teams action="INSERT_OR_UPDATE">
+        <city>Boston</city>
+        <code>BOS</code>
+        <conference>East</conference>
+        <division>Atlantic</division>
+        <id>2</id>
+        <name>Boston Celtics</name>
+        <sys_class_name/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 23:08:24</sys_created_on>
+        <sys_id>3ca5d3a5473511106dc4e357536d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 23:08:24</sys_updated_on>
+    </x_0294_nba_teams>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-15 19:44:03</sys_created_on>
+        <sys_id>fd93f348470211106dc4e357536d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Boston Celtics</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_metadata_link_fd93f348470211106dc4e357536d43c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-15 19:44:03</sys_updated_on>
+        <tablename>x_0294_nba_teams</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</application>
+        <file_path/>
+        <instance_id>fec351a2dbb1c05407072f17d49619af</instance_id>
+        <instance_name>dev96325</instance_name>
+        <name>sys_metadata_link_fd93f348470211106dc4e357536d43c8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;unload&lt;/directory&gt;&lt;documentkey&gt;3ca5d3a5473511106dc4e357536d4375&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_0294_nba_teams"&gt;
+    &lt;x_0294_nba_teams action="INSERT_OR_UPDATE"&gt;
+        &lt;city&gt;Boston&lt;/city&gt;
+        &lt;code&gt;BOS&lt;/code&gt;
+        &lt;conference&gt;East&lt;/conference&gt;
+        &lt;division&gt;Atlantic&lt;/division&gt;
+        &lt;id&gt;2&lt;/id&gt;
+        &lt;name&gt;Boston Celtics&lt;/name&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-09-07 23:08:24&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;3ca5d3a5473511106dc4e357536d4375&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-09-07 23:08:24&lt;/sys_updated_on&gt;
+    &lt;/x_0294_nba_teams&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-15 19:44:03&lt;/sys_created_on&gt;&lt;sys_id&gt;fd93f348470211106dc4e357536d43c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Boston Celtics&lt;/sys_name&gt;&lt;sys_package display_value="NBA Basketball" source="x_0294_nba"&gt;4784ee25477111106dc4e357536d4326&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NBA Basketball"&gt;4784ee25477111106dc4e357536d4326&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_fd93f348470211106dc4e357536d43c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-15 19:44:03&lt;/sys_updated_on&gt;&lt;tablename&gt;x_0294_nba_teams&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1904209930</payload_hash>
+        <record_name>Boston Celtics</record_name>
+        <reverted_from/>
+        <source>1ae5ae69477111106dc4e357536d43db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-15 19:44:03</sys_created_on>
+        <sys_id>b193f348470211106dc4e357536d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18342ae02290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-15 19:44:03</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>f993f34882021110ce3102866c7706c9</update_guid>
+        <update_guid_history>f993f34882021110ce3102866c7706c9:-1904209930</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-26 20:10:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>70f2eeec12e74df88b42980c2b234440</sys_id>
+        <sys_metadata>fd93f348470211106dc4e357536d43c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Boston Celtics</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope_delete display_value="">6bba8fc075e542d8b2a07b1d6d92c240</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_fd93f348470211106dc4e357536d43c8</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_fd93f348470211106dc4e357536d43c8">b193f348470211106dc4e357536d43ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-26 20:10:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

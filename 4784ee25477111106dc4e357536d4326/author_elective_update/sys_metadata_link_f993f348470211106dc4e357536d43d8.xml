@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>unload</directory>
+        <documentkey>89a5d3a5473511106dc4e357536d4386</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_0294_nba_teams">
+    <x_0294_nba_teams action="INSERT_OR_UPDATE">
+        <city>Dallas</city>
+        <code>DAL</code>
+        <conference>West</conference>
+        <division>Southwest</division>
+        <id>8</id>
+        <name>Dallas Mavericks</name>
+        <sys_class_name/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 23:08:24</sys_created_on>
+        <sys_id>89a5d3a5473511106dc4e357536d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 23:08:24</sys_updated_on>
+    </x_0294_nba_teams>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-15 19:44:03</sys_created_on>
+        <sys_id>f993f348470211106dc4e357536d43d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dallas Mavericks</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_metadata_link_f993f348470211106dc4e357536d43d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-15 19:44:03</sys_updated_on>
+        <tablename>x_0294_nba_teams</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</application>
+        <file_path/>
+        <instance_id>fec351a2dbb1c05407072f17d49619af</instance_id>
+        <instance_name>dev96325</instance_name>
+        <name>sys_metadata_link_f993f348470211106dc4e357536d43d8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;unload&lt;/directory&gt;&lt;documentkey&gt;89a5d3a5473511106dc4e357536d4386&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_0294_nba_teams"&gt;
+    &lt;x_0294_nba_teams action="INSERT_OR_UPDATE"&gt;
+        &lt;city&gt;Dallas&lt;/city&gt;
+        &lt;code&gt;DAL&lt;/code&gt;
+        &lt;conference&gt;West&lt;/conference&gt;
+        &lt;division&gt;Southwest&lt;/division&gt;
+        &lt;id&gt;8&lt;/id&gt;
+        &lt;name&gt;Dallas Mavericks&lt;/name&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-09-07 23:08:24&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;89a5d3a5473511106dc4e357536d4386&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-09-07 23:08:24&lt;/sys_updated_on&gt;
+    &lt;/x_0294_nba_teams&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-15 19:44:03&lt;/sys_created_on&gt;&lt;sys_id&gt;f993f348470211106dc4e357536d43d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Dallas Mavericks&lt;/sys_name&gt;&lt;sys_package display_value="NBA Basketball" source="x_0294_nba"&gt;4784ee25477111106dc4e357536d4326&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NBA Basketball"&gt;4784ee25477111106dc4e357536d4326&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_f993f348470211106dc4e357536d43d8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-15 19:44:03&lt;/sys_updated_on&gt;&lt;tablename&gt;x_0294_nba_teams&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1619396204</payload_hash>
+        <record_name>Dallas Mavericks</record_name>
+        <reverted_from/>
+        <source>1ae5ae69477111106dc4e357536d43db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-15 19:44:03</sys_created_on>
+        <sys_id>bd93f348470211106dc4e357536d43d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18342ae03070000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-15 19:44:03</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>f593f348e5021110fc8900cb0a322ad9</update_guid>
+        <update_guid_history>f593f348e5021110fc8900cb0a322ad9:-1619396204</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-26 20:10:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>1f7d99ef301e47f19276184ae88b01c1</sys_id>
+        <sys_metadata>f993f348470211106dc4e357536d43d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dallas Mavericks</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope_delete display_value="">6bba8fc075e542d8b2a07b1d6d92c240</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_f993f348470211106dc4e357536d43d8</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_f993f348470211106dc4e357536d43d8">bd93f348470211106dc4e357536d43d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-26 20:10:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
