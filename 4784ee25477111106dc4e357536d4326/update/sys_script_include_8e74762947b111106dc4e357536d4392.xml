@@ -163,6 +163,32 @@ BasketballUtils.prototype = {
 
     },
 
+
+    getGameByID: function(id) {
+
+        var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Game By ID');
+        r.setStringParameter('ID', id);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Games: ' + response);
+        var parser = JSON.parse(response);
+        var gr = new GlideRecord("x_0294_nba_import_games_to_games");
+        gr.initialize();
+        gr.id = parser.id;
+        gr.date = parser.date;
+        gr.home_team = parser.home_team.id;
+        gr.home_team_score = parser.home_team_score;
+        gr.visitor_team = parser.visitor_team.id;
+        gr.visitor_team_score = parser.visitor_team_score;
+        gr.season = parser.season;
+        gr.postseason = parser.postseason;
+        gr.insert();
+
+        this._sleepytime(1000);
+
+
+    },
+
     getGamesByDate: function(dates) { //
 
         var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
@@ -267,7 +293,7 @@ BasketballUtils.prototype = {
             gr.ftm = parser.data[i].ftm;
             gr.date = parser.data[i].game.date;
             gr.team_id = parser.data[i].team.id;
-        //    gr.opposing_team_id = parser.data[i].game.visitor_team_id;
+            //    gr.opposing_team_id = parser.data[i].game.visitor_team_id;
             gr.minutes = "00:" + parser.data[i].min;
             gr.offreb = parser.data[i].oreb;
             gr.fouls = parser.data[i].pf;
@@ -415,13 +441,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>200</sys_mod_count>
+        <sys_mod_count>203</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-03 20:09:56</sys_updated_on>
+        <sys_updated_on>2022-10-03 20:48:27</sys_updated_on>
     </sys_script_include>
 </record_update>
