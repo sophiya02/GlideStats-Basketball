@@ -41,6 +41,63 @@ BasketballUtils.prototype = {
         }
     },
 
+
+    getPlayerByID: function(id) {
+
+        var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Player By ID');
+        r.setStringParameter('ID', id);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Player by ID: ' + response);
+        var parser = JSON.parse(response);
+
+
+        var gr = new GlideRecord('x_0294_nba_import_players');
+        gr.initialize();
+        gr.id = parser.id;
+        gr.first_name = parser.first_name;
+        gr.last_name = parser.last_name;
+        gr.position = parser.position;
+        gr.current_team = parser.team.id;
+
+        var heightFeet = '';
+        var heightInches = '';
+        var weightPounds = '';
+
+        try {
+            heightFeet = parser.height_feet;
+        } catch (e) {
+            this.debug('No listed height feet.');
+        }
+
+        try {
+            heightInches = parser.height_inches;
+        } catch (e) {
+            this.debug('No listed height inches.');
+        }
+
+        try {
+            weightPounds = parser.weight_pounds;
+        } catch (e) {
+            this.debug('No listed weight in pounds.');
+        }
+
+        gr.height_inches = heightInches;
+        gr.height_feet = heightFeet;
+        gr.weight = weightPounds;
+
+        gr.insert();
+
+
+
+
+
+        this._sleepytime(1000);
+
+
+    },
+
+
     getAllPlayers: function() { //
 
         var pages = new sn_ws.RESTMessageV2('balldontlie.io', 'Players');
@@ -61,7 +118,6 @@ BasketballUtils.prototype = {
             var parser = JSON.parse(response);
             this.debug('next page' + parser.meta.next_page);
             for (var i = 0; i < parser.data.length; i++) {
-                this.debug('hi mom');
                 var gr = new GlideRecord('x_0294_nba_import_players');
                 gr.initialize();
                 gr.id = parser.data[i].id;
@@ -210,8 +266,8 @@ BasketballUtils.prototype = {
             gr.fta = parser.data[i].fta;
             gr.ftm = parser.data[i].ftm;
             gr.date = parser.data[i].game.date;
-            gr.team_id = parser.data[i].game.home_team_id;
-            gr.opposing_team_id = parser.data[i].game.visitor_team_id;
+            gr.team_id = parser.data[i].team.id;
+        //    gr.opposing_team_id = parser.data[i].game.visitor_team_id;
             gr.minutes = "00:" + parser.data[i].min;
             gr.offreb = parser.data[i].oreb;
             gr.fouls = parser.data[i].pf;
@@ -315,8 +371,8 @@ BasketballUtils.prototype = {
             gr.insert();
 
         }
-       
-		this._sleepytime(1000);
+
+        this._sleepytime(1000);
 
 
 
@@ -345,6 +401,7 @@ BasketballUtils.prototype = {
 
 
 
+
     _sleepytime: function(ms) {
         var endSleep = new GlideDuration().getNumericValue() + ms;
         while (new GlideDuration().getNumericValue() < endSleep) {
@@ -358,13 +415,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>195</sys_mod_count>
+        <sys_mod_count>200</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-26 17:09:56</sys_updated_on>
+        <sys_updated_on>2022-10-03 20:09:56</sys_updated_on>
     </sys_script_include>
 </record_update>

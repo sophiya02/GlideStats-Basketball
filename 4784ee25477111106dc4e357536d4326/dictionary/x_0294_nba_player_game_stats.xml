@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Player Game Stats" max_length="40" name="x_0294_nba_player_game_stats" sizeclass="804" type="collection">
+    <element label="Player Game Stats" max_length="40" name="x_0294_nba_player_game_stats" sizeclass="1054" type="collection">
         <element label="Assists" max_length="10" name="assists" type="integer"/>
         <element label="Blocks" max_length="10" name="blocks" type="integer"/>
         <element label="Date" max_length="40" name="date" type="glide_date"/>
@@ -14,7 +14,6 @@
         <element label="Game" max_length="32" name="game" reference="x_0294_nba_games" type="reference"/>
         <element label="Minutes" max_length="10" name="minutes" type="glide_duration"/>
         <element label="Offensive Rebounds" max_length="10" name="offensive_rebounds" type="integer"/>
-        <element label="Opposing Team" max_length="32" name="opposing_team" reference="x_0294_nba_teams" type="reference"/>
         <element label="Player" max_length="32" name="player" reference="x_0294_nba_players" type="reference"/>
         <element label="Points" max_length="10" name="points" type="integer"/>
         <element label="Steals" max_length="10" name="steals" type="integer"/>
@@ -28,12 +27,9 @@
             <element name="game"/>
         </index>
         <index name="index2">
-            <element name="opposing_team"/>
-        </index>
-        <index name="index3">
             <element name="team"/>
         </index>
-        <index name="index4">
+        <index name="index3">
             <element name="player"/>
         </index>
     </element>
