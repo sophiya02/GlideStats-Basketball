@@ -293,7 +293,6 @@ BasketballUtils.prototype = {
             gr.ftm = parser.data[i].ftm;
             gr.date = parser.data[i].game.date;
             gr.team_id = parser.data[i].team.id;
-            //    gr.opposing_team_id = parser.data[i].game.visitor_team_id;
             gr.minutes = "00:" + parser.data[i].min;
             gr.offreb = parser.data[i].oreb;
             gr.fouls = parser.data[i].pf;
@@ -320,6 +319,39 @@ BasketballUtils.prototype = {
         }
         this.debug('Yesterday Game IDs: ' + ids);
         return ids;
+    },
+
+    getGameIDsByDateRange: function(start, end) {
+
+        var pages = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
+        pages.setQueryParameter("start_date", start);
+        pages.setQueryParameter("end_date", end);
+        pages.setQueryParameter("per_page", "100");
+        var pagesRes = pages.execute();
+        var pagesResponse = pagesRes.getBody();
+        var pagesParse = JSON.parse(pagesResponse);
+        var totalPages = pagesParse.meta.total_pages;
+        var ids = [];
+
+        for (var sheet = 1; sheet <= totalPages; sheet++) {
+
+            var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
+            r.setQueryParameter("start_date", start);
+            r.setQueryParameter("end_date", end);
+            r.setQueryParameter("per_page", "100");
+            r.setQueryParameter("page", sheet);
+            var res = r.execute();
+            var response = res.getBody();
+            var parser = JSON.parse(response);
+            for (var i = 0; i < parser.data.length; i++) {
+                ids.push(parser.data[i].id);
+            }
+
+            this._sleepytime(1000);
+        }
+        this.debug('Game IDs for date range: ' + ids);
+        return ids;
+
     },
 
     getYesterdayStatsForAllPlayers: function() {
@@ -407,7 +439,7 @@ BasketballUtils.prototype = {
     getUpdatedSeasonAvgs: function() {
 
         var gr = new GlideRecord('x_0294_nba_player_game_stats');
-        var enc = "sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()";
+        var enc = "sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^dateONLast 12 months@javascript:gs.beginningOfLast12Months()@javascript:gs.endOfLast12Months()";
         var gdt = new GlideDateTime;
         var year = parseInt(gdt.getYearUTC());
         var month = parseInt(gdt.getMonthUTC());
@@ -423,6 +455,14 @@ BasketballUtils.prototype = {
             new BasketballUtils().getSingleSeasonAvgForPlayer(year, id);
         }
 
+    },
+
+    getGamesPlayersStatsbyRange: function(start, end) {
+        var games = this.getGamesByDateRange(start, end);
+		var ids = this.getGameIDsByDateRange(start, end);
+		for (var i = 0; i < ids.length; i++) {
+            this.getPlayerStatsByGame(ids[i]);
+        }
     },
 
 
@@ -441,13 +481,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>203</sys_mod_count>
+        <sys_mod_count>206</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-03 20:48:27</sys_updated_on>
+        <sys_updated_on>2022-10-04 18:54:05</sys_updated_on>
     </sys_script_include>
 </record_update>

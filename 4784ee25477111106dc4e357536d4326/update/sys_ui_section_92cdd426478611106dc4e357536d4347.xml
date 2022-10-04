@@ -1,158 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="92cdd426478611106dc4e357536d4347" sys_domain="global" table="x_0294_nba_games" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>date</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>92cd5826478611106dc4e357536d4301</sys_id>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>a3c26dd6479211106dc4e357536d430e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
             <sys_user/>
-            <type>.begin_split</type>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>home_team</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>6bc26dd6479211106dc4e357536d430e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>home_team_score</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>1acd5826478611106dc4e357536d4301</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>visitor_team</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>9acd5826478611106dc4e357536d4301</sys_id>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>ebc26dd6479211106dc4e357536d430e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>date</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>1ecd5826478611106dc4e357536d4301</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>id</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>9ecd5826478611106dc4e357536d4301</sys_id>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>6fc26dd6479211106dc4e357536d430e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>12cd5826478611106dc4e357536d4302</sys_id>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>efc26dd6479211106dc4e357536d430e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>home_team</element>
+            <element>season</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>63c26dd6479211106dc4e357536d430f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>visitor_team</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>92cd5826478611106dc4e357536d4302</sys_id>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>e3c26dd6479211106dc4e357536d430f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>playoffs</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>16cd5826478611106dc4e357536d4302</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>season</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>96cd5826478611106dc4e357536d4302</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>visitor_team_score</element>
-            <position>9</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>1acd5826478611106dc4e357536d4302</sys_id>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>67c26dd6479211106dc4e357536d430f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>10</position>
+            <element>playoffs</element>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 22:34:45</sys_created_on>
-            <sys_id>9acd5826478611106dc4e357536d4302</sys_id>
+            <sys_created_on>2022-10-04 19:13:31</sys_created_on>
+            <sys_id>e7c26dd6479211106dc4e357536d430f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_games" sys_domain="global" view="Default view">92cdd426478611106dc4e357536d4347</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 22:34:45</sys_updated_on>
+            <sys_updated_on>2022-10-04 19:13:31</sys_updated_on>
             <sys_user/>
-            <type>.end_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
