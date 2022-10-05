@@ -12,6 +12,7 @@ Basketball StatsNow is a ServiceNow application built using the balldontlie.io A
 There is a script library called BasketballUtils that does most of the heavy lifting. You can leverage the functions here to pull in whatever NBA data you want; 1979 to present day. balldontlie.io API game stats are updated every ten minutes.
 
 <b>BasketballUtils functions:</b>
+
 <b>getTeams()</b> - Retrieves all current NBA teams and saves the data to the Teams table. Example usage: 
 new BasketballUtils().getTeams();
 
