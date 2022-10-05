@@ -5,7 +5,7 @@
         <api_name>x_0294_nba.BasketballUtils</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
-        <description>Script library for NBA Basketball application.</description>
+        <description>Script library for Basketball StatsNow application.</description>
         <name>BasketballUtils</name>
         <script><![CDATA[var BasketballUtils = Class.create();
 BasketballUtils.prototype = {
@@ -20,7 +20,7 @@ BasketballUtils.prototype = {
         }
     },
 
-    getTeams: function() { //
+    getTeams: function() { 
         var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Teams');
         var res = r.execute();
         var response = res.getBody();
@@ -85,20 +85,14 @@ BasketballUtils.prototype = {
         gr.height_inches = heightInches;
         gr.height_feet = heightFeet;
         gr.weight = weightPounds;
-
         gr.insert();
-
-
-
-
-
         this._sleepytime(1000);
 
 
     },
 
 
-    getAllPlayers: function() { //
+    getAllPlayers: function() { 
 
         var pages = new sn_ws.RESTMessageV2('balldontlie.io', 'Players');
         pages.setQueryParameter("per_page", '100');
@@ -154,9 +148,6 @@ BasketballUtils.prototype = {
 
                 gr.insert();
 
-
-
-
             }
             this._sleepytime(1000);
         }
@@ -186,10 +177,9 @@ BasketballUtils.prototype = {
 
         this._sleepytime(1000);
 
-
     },
 
-    getGamesByDate: function(dates) { //
+    getGamesByDate: function(dates) { 
 
         var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
         r.setQueryParameter("dates%5B%5D", dates);
@@ -215,7 +205,7 @@ BasketballUtils.prototype = {
 
     },
 
-    getGamesByDateRange: function(start, end) { //
+    getGamesByDateRange: function(start, end) { 
 
         var pages = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
         pages.setQueryParameter("start_date", start);
@@ -249,16 +239,13 @@ BasketballUtils.prototype = {
                 gr.season = parser.data[i].season;
                 gr.postseason = parser.data[i].postseason;
                 gr.insert();
-
-
-
             }
             this._sleepytime(1000);
         }
 
     },
 
-    getPlayerStatsByGame: function(game) { //
+    getPlayerStatsByGame: function(game) { 
         var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Stats');
         r.setQueryParameter("game_ids%5B%5D", game);
         var res = r.execute();
@@ -432,8 +419,6 @@ BasketballUtils.prototype = {
 
         this._sleepytime(1000);
 
-
-
     },
 
     getUpdatedSeasonAvgs: function() {
@@ -457,21 +442,82 @@ BasketballUtils.prototype = {
 
     },
 
-    getGamesPlayersStatsbyRange: function(start, end) {
+    getGamesPlayersStatsByRange: function(start, end) {
         var games = this.getGamesByDateRange(start, end);
-		var ids = this.getGameIDsByDateRange(start, end);
-		for (var i = 0; i < ids.length; i++) {
+        var ids = this.getGameIDsByDateRange(start, end);
+        for (var i = 0; i < ids.length; i++) {
             this.getPlayerStatsByGame(ids[i]);
         }
     },
 
+    getPlayerStatlinesByYear: function(player, year) {
+		
+		var pages = new sn_ws.RESTMessageV2('balldontlie.io', 'Games');
+        pages.setQueryParameter("seasons%5B%5D", year);
+        pages.setQueryParameter("player_ids%5B%5D", player);
+		pages.setQueryParameter("per_page", "100");
+        var pagesRes = pages.execute();
+        var pagesResponse = pagesRes.getBody();
+        var pagesParse = JSON.parse(pagesResponse);
+        var totalPages = pagesParse.meta.total_pages;
 
+        for (var sheet = 1; sheet <= totalPages; sheet++) {
 
+        var r = new sn_ws.RESTMessageV2('balldontlie.io', 'Stats');
+        r.setQueryParameter("seasons%5B%5D", year);
+        r.setQueryParameter("player_ids%5B%5D", player);
+		r.setQueryParameter("per_page", "100");
+		r.setQueryParameter("page", sheet);
+        var res = r.execute();
+        var response = res.getBody();
+        this.debug('Game Player Statistics: ' + response);
+        var parser = JSON.parse(response);
+        for (var i = 0; i < parser.data.length; i++) {
+            var gr = new GlideRecord('x_0294_nba_import_player_game_stats');
+            gr.initialize();
+            gr.player_id = parser.data[i].player.id;
+            gr.assists = parser.data[i].ast;
+            gr.blocks = parser.data[i].blk;
+            gr.defreb = parser.data[i].dreb;
+            gr.game_id = parser.data[i].game.id;
+
+            var tpp = parser.data[i].fg3_pct;
+            gr.u_3pp = tpp;
+
+            gr.u_3pa = parser.data[i].fg3a;
+            gr.u_3pm = parser.data[i].fg3m;
+
+            var fgp = parser.data[i].fg_pct;
+            gr.fgp = fgp;
+
+            gr.fga = parser.data[i].fga;
+            gr.fgm = parser.data[i].fgm;
+
+            var ftp = parser.data[i].ft_pct;
+            gr.ftp = ftp;
+
+            gr.fta = parser.data[i].fta;
+            gr.ftm = parser.data[i].ftm;
+            gr.date = parser.data[i].game.date;
+            gr.team_id = parser.data[i].team.id;
+            gr.minutes = "00:" + parser.data[i].min;
+            gr.offreb = parser.data[i].oreb;
+            gr.fouls = parser.data[i].pf;
+            gr.points = parser.data[i].pts;
+            gr.totreb = parser.data[i].reb;
+            gr.steals = parser.data[i].stl;
+            gr.turnovers = parser.data[i].turnover;
+
+            gr.insert();
+
+        }
+		}
+    },
 
     _sleepytime: function(ms) {
         var endSleep = new GlideDuration().getNumericValue() + ms;
         while (new GlideDuration().getNumericValue() < endSleep) {
-            //wait 
+            //waits the duration of ms passed in
         }
     },
 
@@ -481,13 +527,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>206</sys_mod_count>
+        <sys_mod_count>213</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
-        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-04 18:54:05</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:36:51</sys_updated_on>
     </sys_script_include>
 </record_update>

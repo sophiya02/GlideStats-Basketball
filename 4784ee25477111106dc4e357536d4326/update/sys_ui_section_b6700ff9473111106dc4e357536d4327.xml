@@ -4,27 +4,27 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>1b9113da474211106dc4e357536d432d</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>541c316a471211106dc4e357536d43c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>college</element>
+            <element>most_recent_team</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>9b9113da474211106dc4e357536d432d</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>1c1c316a471211106dc4e357536d43c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,307 +32,125 @@
             <element>.begin_split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>1f9113da474211106dc4e357536d432d</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>9c1c316a471211106dc4e357536d43c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>birthday</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>9f9113da474211106dc4e357536d432d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>jersey_number</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>239113da474211106dc4e357536d432e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>a39113da474211106dc4e357536d432e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>height</element>
-            <position>6</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>279113da474211106dc4e357536d432e</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>101c316a471211106dc4e357536d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>years_pro</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>a79113da474211106dc4e357536d432e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>2b9113da474211106dc4e357536d432e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>country</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>ab9113da474211106dc4e357536d432e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>last_name</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>2f9113da474211106dc4e357536d432e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>11</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>af9113da474211106dc4e357536d432e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>id</element>
-            <position>12</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>239113da474211106dc4e357536d432f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>13</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>a39113da474211106dc4e357536d432f</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>901c316a471211106dc4e357536d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>rookie_year</element>
-            <position>14</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>279113da474211106dc4e357536d432f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>15</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>a79113da474211106dc4e357536d432f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>first_name</element>
-            <position>16</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>2b9113da474211106dc4e357536d432f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>17</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>ab9113da474211106dc4e357536d432f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>weight</element>
-            <position>18</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>2f9113da474211106dc4e357536d432f</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>141c316a471211106dc4e357536d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>19</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>af9113da474211106dc4e357536d432f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>position</element>
-            <position>20</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>239113da474211106dc4e357536d4330</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>21</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>a39113da474211106dc4e357536d4330</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>941c316a471211106dc4e357536d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>most_recent_team</element>
-            <position>22</position>
+            <element>.begin_split</element>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>279113da474211106dc4e357536d4330</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>181c316a471211106dc4e357536d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>981c316a471211106dc4e357536d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>picture</element>
-            <position>23</position>
+            <element>.split</element>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-22 17:01:57</sys_created_on>
-            <sys_id>a79113da474211106dc4e357536d4330</sys_id>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>1c1c316a471211106dc4e357536d43c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-22 17:01:57</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>id</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:42:21</sys_created_on>
+            <sys_id>9c1c316a471211106dc4e357536d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_players" sys_domain="global" view="Default view">b6700ff9473111106dc4e357536d4327</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:42:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -350,9 +168,9 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_0294_nba_players</sys_name>
             <sys_overrides/>
-            <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
             <sys_policy/>
-            <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
             <sys_update_name>sys_ui_section_b6700ff9473111106dc4e357536d4327</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2022-09-08 16:14:27</sys_updated_on>

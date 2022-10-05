@@ -1,310 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="ddbf64b2478651106dc4e357536d43ca" sys_domain="global" table="x_0294_nba_season_averages" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>.split</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>9dbfacb2478651106dc4e357536d4307</sys_id>
+            <sys_created_on>2022-10-05 15:59:13</sys_created_on>
+            <sys_id>9fefb56e471211106dc4e357536d438c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:13</sys_updated_on>
             <sys_user/>
-            <type>.begin_split</type>
+            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>minutes</element>
+            <element>.end_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>15bfacb2478651106dc4e357536d4308</sys_id>
+            <sys_created_on>2022-10-05 15:59:13</sys_created_on>
+            <sys_id>13efb56e471211106dc4e357536d438d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:13</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>field_goals_attempted</element>
+            <element>player</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>95bfacb2478651106dc4e357536d4308</sys_id>
+            <sys_created_on>2022-10-05 15:59:13</sys_created_on>
+            <sys_id>93efb56e471211106dc4e357536d438d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>field_goals_made</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>19bfacb2478651106dc4e357536d4308</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>games_played</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>99bfacb2478651106dc4e357536d4308</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>season</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:13</sys_created_on>
+            <sys_id>17efb56e471211106dc4e357536d438d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:13</sys_created_on>
+            <sys_id>97efb56e471211106dc4e357536d438d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:13</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>games_played</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>1dbfacb2478651106dc4e357536d4308</sys_id>
+            <sys_created_on>2022-10-05 15:59:13</sys_created_on>
+            <sys_id>1befb56e471211106dc4e357536d438d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>player</element>
+            <element>minutes</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>9dbfacb2478651106dc4e357536d4308</sys_id>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>9befb56e471211106dc4e357536d438d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>blocks</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>11bfacb2478651106dc4e357536d4309</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>fouls</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>91bfacb2478651106dc4e357536d4309</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>steals</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>15bfacb2478651106dc4e357536d4309</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_3_point_field_goals_attempted</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>95bfacb2478651106dc4e357536d4309</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>free_throws_made</element>
-            <position>11</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>19bfacb2478651106dc4e357536d4309</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>12</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>99bfacb2478651106dc4e357536d4309</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>turnovers</element>
-            <position>13</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>1dbfacb2478651106dc4e357536d4309</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>defensive_rebounds</element>
-            <position>14</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>9dbfacb2478651106dc4e357536d4309</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>offensive_rebounds</element>
-            <position>15</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>11bfacb2478651106dc4e357536d430a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_3_point_field_goals_made</element>
-            <position>16</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>91bfacb2478651106dc4e357536d430a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assists</element>
-            <position>17</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>15bfacb2478651106dc4e357536d430a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>free_throws_attempted</element>
-            <position>18</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>95bfacb2478651106dc4e357536d430a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>total_rebounds</element>
-            <position>19</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>19bfacb2478651106dc4e357536d430a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>points</element>
-            <position>20</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>99bfacb2478651106dc4e357536d430a</sys_id>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>1fefb56e471211106dc4e357536d438d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>free_throw</element>
-            <position>21</position>
+            <element>assists</element>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>1dbfacb2478651106dc4e357536d430a</sys_id>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>9fefb56e471211106dc4e357536d438d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>blocks</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>13efb56e471211106dc4e357536d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>steals</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>93efb56e471211106dc4e357536d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_rebounds</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>17efb56e471211106dc4e357536d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>defensive_rebounds</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>97efb56e471211106dc4e357536d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>offensive_rebounds</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>1befb56e471211106dc4e357536d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>turnovers</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>9befb56e471211106dc4e357536d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fouls</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>1fefb56e471211106dc4e357536d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>9fefb56e471211106dc4e357536d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>field_goals_attempted</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>13efb56e471211106dc4e357536d438f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>field_goals_made</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>93efb56e471211106dc4e357536d438f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>field_goal</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>17efb56e471211106dc4e357536d438f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_3_point_field_goals_attempted</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>97efb56e471211106dc4e357536d438f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_3_point_field_goals_made</element>
+            <position>21</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>1befb56e471211106dc4e357536d438f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -312,43 +312,57 @@
             <element>u_3_point_field_goal</element>
             <position>22</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>9dbfacb2478651106dc4e357536d430a</sys_id>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>9befb56e471211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>field_goal</element>
+            <element>free_throws_attempted</element>
             <position>23</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>11bfacb2478651106dc4e357536d430b</sys_id>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>1fefb56e471211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
+            <element>free_throws_made</element>
             <position>24</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-23 18:31:31</sys_created_on>
-            <sys_id>91bfacb2478651106dc4e357536d430b</sys_id>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>9fefb56e471211106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
             <sys_user/>
-            <type>.end_split</type>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>free_throw</element>
+            <position>25</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-05 15:59:14</sys_created_on>
+            <sys_id>13efb56e471211106dc4e357536d4390</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_season_averages" sys_domain="global" view="Default view">ddbf64b2478651106dc4e357536d43ca</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-05 15:59:14</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
@@ -364,9 +378,9 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_0294_nba_season_averages</sys_name>
             <sys_overrides/>
-            <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
             <sys_policy/>
-            <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
             <sys_update_name>sys_ui_section_ddbf64b2478651106dc4e357536d43ca</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2022-09-23 18:31:31</sys_updated_on>

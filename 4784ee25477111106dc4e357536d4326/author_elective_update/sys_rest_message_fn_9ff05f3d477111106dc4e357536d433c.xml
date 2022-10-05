@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Team Stats</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>API NBA [ Team Stats ]</qualified_name>
+        <rest_endpoint>https://api-nba-v1.p.rapidapi.com/teams/statistics</rest_endpoint>
+        <rest_message display_value="API NBA">3467eee9477111106dc4e357536d4378</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 17:27:29</sys_created_on>
+        <sys_id>9ff05f3d477111106dc4e357536d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Stats</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_rest_message_fn_9ff05f3d477111106dc4e357536d433c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:27:29</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</application>
+        <file_path/>
+        <instance_id>fec351a2dbb1c05407072f17d49619af</instance_id>
+        <instance_name>dev96325</instance_name>
+        <name>sys_rest_message_fn_9ff05f3d477111106dc4e357536d433c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Team Stats</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>API NBA [ Team Stats ]</qualified_name><rest_endpoint>https://api-nba-v1.p.rapidapi.com/teams/statistics</rest_endpoint><rest_message display_value="API NBA">3467eee9477111106dc4e357536d4378</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:27:29</sys_created_on><sys_id>9ff05f3d477111106dc4e357536d433c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Team Stats</sys_name><sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package><sys_policy/><sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope><sys_update_name>sys_rest_message_fn_9ff05f3d477111106dc4e357536d433c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-08 17:27:29</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-640306215</payload_hash>
+        <record_name>Team Stats</record_name>
+        <reverted_from/>
+        <source>1ae5ae69477111106dc4e357536d43db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 17:27:29</sys_created_on>
+        <sys_id>7831137d477111106dc4e357536d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1831e2474c60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:27:29</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>b031137d7a711110416833ea3b5f4447</update_guid>
+        <update_guid_history>b031137d7a711110416833ea3b5f4447:-640306215</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-05 15:49:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>7129df3d9c134d4a95124920e6d8cf49</sys_id>
+        <sys_metadata>9ff05f3d477111106dc4e357536d433c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Stats</sys_name>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope_delete display_value="">6bba8fc075e542d8b2a07b1d6d92c240</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_9ff05f3d477111106dc4e357536d433c</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_9ff05f3d477111106dc4e357536d433c">7831137d477111106dc4e357536d4347</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-05 15:49:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

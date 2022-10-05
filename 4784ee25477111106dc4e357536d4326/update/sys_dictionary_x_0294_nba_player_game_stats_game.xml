@@ -56,9 +56,9 @@
         <sys_id>f9fc8c3e47c251106dc4e357536d430b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Game</sys_name>
-        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy/>
-        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_dictionary_x_0294_nba_player_game_stats_game</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-09-23 16:18:52</sys_updated_on>

@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Players" max_length="40" name="x_0294_nba_players" sizeclass="3757" type="collection">
-        <element label="Birthday" max_length="40" name="birthday" type="glide_date"/>
-        <element label="College" max_length="100" name="college" type="string"/>
-        <element label="Country" max_length="100" name="country" type="string"/>
         <element label="First Name" max_length="100" name="first_name" type="string"/>
         <element label="Height" max_length="10" name="height" type="string"/>
         <element label="ID" max_length="4" name="id" type="string"/>
-        <element label="Jersey Number" max_length="2" name="jersey_number" type="string"/>
         <element label="Last Name" max_length="100" name="last_name" type="string"/>
         <element label="Most Recent Team" max_length="32" name="most_recent_team" reference="x_0294_nba_teams" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Name" max_length="200" name="name" type="string"/>
         <element label="Position" max_length="3" name="position" type="string"/>
-        <element label="Rookie Year" max_length="4" name="rookie_year" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="Weight" max_length="4" name="weight" type="string"/>
-        <element label="Years Pro" max_length="3" name="years_pro" type="string"/>
         <index name="index">
             <element name="id"/>
         </index>

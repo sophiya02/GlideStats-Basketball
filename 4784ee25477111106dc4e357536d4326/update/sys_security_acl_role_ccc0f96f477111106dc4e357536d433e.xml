@@ -6,9 +6,9 @@
         <sys_id>ccc0f96f477111106dc4e357536d433e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_0294_nba_import_player_game_stats.x_0294_nba.user</sys_name>
-        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy/>
-        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_security_acl display_value="x_0294_nba_import_player_game_stats">08c0f96f477111106dc4e357536d433c</sys_security_acl>
         <sys_update_name>sys_security_acl_role_ccc0f96f477111106dc4e357536d433e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>

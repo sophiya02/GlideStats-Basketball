@@ -56,9 +56,9 @@
         <sys_id>18da36b5473111106dc4e357536d436e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Position</sys_name>
-        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy/>
-        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_dictionary_x_0294_nba_import_players_position</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-09-08 16:06:16</sys_updated_on>
