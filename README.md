@@ -1,2 +1,2 @@
-# ServiceNow-Basketball-Statistics
-An application built on the ServiceNow platform utilizing data from the API-NBA API.
+# Basketball-StatsNow
+Basketball StatsNow is a ServiceNow application built using the balldontlie.io API open source project.
