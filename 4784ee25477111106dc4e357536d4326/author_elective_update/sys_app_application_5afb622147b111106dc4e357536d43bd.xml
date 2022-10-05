@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Teams</name>
+        <order>100</order>
+        <roles>x_0294_nba.teams_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 20:06:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5afb622147b111106dc4e357536d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Teams</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_app_application_5afb622147b111106dc4e357536d43bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 20:06:22</sys_updated_on>
+        <title>Teams</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</application>
+        <file_path/>
+        <instance_id>fec351a2dbb1c05407072f17d49619af</instance_id>
+        <instance_name>dev96325</instance_name>
+        <name>sys_app_application_5afb622147b111106dc4e357536d43bd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Teams</name><order>100</order><roles>x_0294_nba.teams_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-07 20:06:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5afb622147b111106dc4e357536d43bd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Teams</sys_name><sys_overrides/><sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package><sys_policy/><sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope><sys_update_name>sys_app_application_5afb622147b111106dc4e357536d43bd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-07 20:06:22</sys_updated_on><title>Teams</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>246117591</payload_hash>
+        <record_name>Teams</record_name>
+        <reverted_from/>
+        <source>1ae5ae69477111106dc4e357536d43db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 20:06:22</sys_created_on>
+        <sys_id>defb622147b111106dc4e357536d43bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183198f8fc00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 20:06:22</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>1afb6221e1b11110df36b1cff19718bf</update_guid>
+        <update_guid_history>1afb6221e1b11110df36b1cff19718bf:246117591</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Teams">a4703e2147b111106dc4e357536d4368</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 20:25:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>15dd218dcf3c4686853ef0c900912da1</sys_id>
+        <sys_metadata>5afb622147b111106dc4e357536d43bd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Teams</sys_name>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope_delete display_value="">6bba8fc075e542d8b2a07b1d6d92c240</sys_scope_delete>
+        <sys_update_name>sys_app_application_5afb622147b111106dc4e357536d43bd</sys_update_name>
+        <sys_update_version display_value="sys_app_application_5afb622147b111106dc4e357536d43bd">defb622147b111106dc4e357536d43bf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 20:25:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

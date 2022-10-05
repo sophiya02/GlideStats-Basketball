@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="player_id" label="Player ID" language="en" table="x_0294_nba_import_player_game_stats">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>player_id</element>
+            <help/>
+            <hint/>
+            <label>Player ID</label>
+            <language>en</language>
+            <name>x_0294_nba_import_player_game_stats</name>
+            <plural>Player IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-13 20:56:26</sys_created_on>
+            <sys_id>56f03d6f477111106dc4e357536d4374</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Player ID</sys_name>
+            <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_update_name>sys_documentation_x_0294_nba_import_player_game_stats_player_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-13 20:56:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

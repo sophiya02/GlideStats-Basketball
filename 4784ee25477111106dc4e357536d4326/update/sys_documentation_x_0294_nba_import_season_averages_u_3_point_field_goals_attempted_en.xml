@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_3_point_field_goals_attempted" label="3-Point Field Goals Attempted" language="en" table="x_0294_nba_import_season_averages">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_3_point_field_goals_attempted</element>
+            <help/>
+            <hint/>
+            <label>3-Point Field Goals Attempted</label>
+            <language>en</language>
+            <name>x_0294_nba_import_season_averages</name>
+            <plural>3-Point Field Goals Attempted</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-23 18:21:27</sys_created_on>
+            <sys_id>396d6832478651106dc4e357536d436c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>3-Point Field Goals Attempted</sys_name>
+            <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_update_name>sys_documentation_x_0294_nba_import_season_averages_u_3_point_field_goals_attempted_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-23 18:21:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

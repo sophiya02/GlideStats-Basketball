@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Verbose debugging?</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_0294_nba.verbose</name>
+        <read_roles/>
+        <suffix>verbose</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-07 21:46:54</sys_created_on>
+        <sys_id>ade2076547f111106dc4e357536d434f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_0294_nba.verbose</sys_name>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_properties_ade2076547f111106dc4e357536d434f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 20:58:50</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=ade2076547f111106dc4e357536d434f"/>
+</record_update>

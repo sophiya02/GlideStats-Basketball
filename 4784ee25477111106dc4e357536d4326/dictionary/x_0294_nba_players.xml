@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Players" max_length="40" name="x_0294_nba_players" sizeclass="3757" type="collection">
+        <element label="First Name" max_length="100" name="first_name" type="string"/>
+        <element label="Height" max_length="10" name="height" type="string"/>
+        <element label="ID" max_length="4" name="id" type="string"/>
+        <element label="Last Name" max_length="100" name="last_name" type="string"/>
+        <element label="Most Recent Team" max_length="32" name="most_recent_team" reference="x_0294_nba_teams" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="200" name="name" type="string"/>
+        <element label="Position" max_length="3" name="position" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Weight" max_length="4" name="weight" type="string"/>
+        <index name="index">
+            <element name="id"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index3">
+            <element name="most_recent_team"/>
+        </index>
+    </element>
+</database>

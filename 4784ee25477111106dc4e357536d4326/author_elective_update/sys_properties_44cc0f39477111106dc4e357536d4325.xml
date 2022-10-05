@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>The free version of API NBA only allows for 10 calls per minute. This property, if set to true, will add a delay between calls so that more than 10 calls will never be made in a minute. Note that this will make many calls take 5+ minutes, and should only be used if you are using the free version of API NBA.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_0294_nba.sleep</name>
+        <read_roles/>
+        <suffix>sleep</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-08 17:08:49</sys_created_on>
+        <sys_id>44cc0f39477111106dc4e357536d4325</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_0294_nba.sleep</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_properties_44cc0f39477111106dc4e357536d4325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 19:27:02</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=44cc0f39477111106dc4e357536d4325"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</application>
+        <file_path/>
+        <instance_id>fec351a2dbb1c05407072f17d49619af</instance_id>
+        <instance_name>dev96325</instance_name>
+        <name>sys_properties_44cc0f39477111106dc4e357536d4325</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>The free version of API NBA only allows for 10 calls per minute. This property, if set to true, will add a delay between calls so that more than 10 calls will never be made in a minute. Note that this will make many calls take 5+ minutes, and should only be used if you are using the free version of API NBA.</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_0294_nba.sleep</name><read_roles/><suffix>sleep</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-08 17:08:49</sys_created_on><sys_id>44cc0f39477111106dc4e357536d4325</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_0294_nba.sleep</sys_name><sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package><sys_policy/><sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope><sys_update_name>sys_properties_44cc0f39477111106dc4e357536d4325</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 19:27:02</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=44cc0f39477111106dc4e357536d4325"/></record_update>]]></payload>
+        <payload_hash>-79421189</payload_hash>
+        <record_name>x_0294_nba.sleep</record_name>
+        <reverted_from/>
+        <source>1ae5ae69477111106dc4e357536d43db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 19:27:02</sys_created_on>
+        <sys_id>898cddab473111106dc4e357536d4378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1833851b6d60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 19:27:02</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>c18cddab733111105886291d6d588e78</update_guid>
+        <update_guid_history>c18cddab733111105886291d6d588e78:-79421189,7e4fb339ca351110d3757001f593d1ff:-2016478733,efec4739607111102a062141ee243152:-1137033155</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 20:57:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>3c3d1faad6354ab895d4c7de84ec5804</sys_id>
+        <sys_metadata>44cc0f39477111106dc4e357536d4325</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_0294_nba.sleep</sys_name>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope_delete display_value="">6bba8fc075e542d8b2a07b1d6d92c240</sys_scope_delete>
+        <sys_update_name>sys_properties_44cc0f39477111106dc4e357536d4325</sys_update_name>
+        <sys_update_version display_value="sys_properties_44cc0f39477111106dc4e357536d4325">898cddab473111106dc4e357536d4378</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 20:57:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

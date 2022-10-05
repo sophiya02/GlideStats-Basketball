@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="3083291a479211106dc4e357536d4366" sys_domain="global" table="x_0294_nba_player_game_stats" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 19:16:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7483291a479211106dc4e357536d43c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_0294_nba_player_game_stats" name="x_0294_nba_player_game_stats" sys_domain="global" view="Default view">3083291a479211106dc4e357536d4366</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_0294_nba_player_game_stats" sys_domain="global" view="Default view">c63242af47b111106dc4e357536d436a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 19:16:37</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_0294_nba_player_game_stats</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 19:16:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3083291a479211106dc4e357536d4366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_0294_nba_player_game_stats</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_update_name>sys_ui_form_sections_3083291a479211106dc4e357536d4366</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 19:16:36</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

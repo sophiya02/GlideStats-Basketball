@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="turnovers" label="Turnovers" language="en" table="x_0294_nba_import_player_game_stats">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>turnovers</element>
+            <help/>
+            <hint/>
+            <label>Turnovers</label>
+            <language>en</language>
+            <name>x_0294_nba_import_player_game_stats</name>
+            <plural>Turnovers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-13 21:42:44</sys_created_on>
+            <sys_id>bc9b79e747b111106dc4e357536d438d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Turnovers</sys_name>
+            <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_update_name>sys_documentation_x_0294_nba_import_player_game_stats_turnovers_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-13 21:42:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

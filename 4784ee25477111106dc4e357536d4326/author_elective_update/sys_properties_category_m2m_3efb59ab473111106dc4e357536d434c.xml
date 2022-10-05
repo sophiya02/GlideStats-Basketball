@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="NBA Properties">53ebd9ab473111106dc4e357536d43b4</category>
+        <order>100</order>
+        <property display_value="x_0294_nba.API NBA Key" name="x_0294_nba.API NBA Key">5dc33ae547b111106dc4e357536d43d2</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 19:24:42</sys_created_on>
+        <sys_id>3efb59ab473111106dc4e357536d434c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_0294_nba.API NBA Key.NBA Properties</sys_name>
+        <sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_3efb59ab473111106dc4e357536d434c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 19:25:06</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</application>
+        <file_path/>
+        <instance_id>fec351a2dbb1c05407072f17d49619af</instance_id>
+        <instance_name>dev96325</instance_name>
+        <name>sys_properties_category_m2m_3efb59ab473111106dc4e357536d434c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="NBA Properties">53ebd9ab473111106dc4e357536d43b4</category><order>100</order><property display_value="x_0294_nba.API NBA Key" name="x_0294_nba.API NBA Key">5dc33ae547b111106dc4e357536d43d2</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 19:24:42</sys_created_on><sys_id>3efb59ab473111106dc4e357536d434c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_0294_nba.API NBA Key.NBA Properties</sys_name><sys_package display_value="NBA Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package><sys_policy/><sys_scope display_value="NBA Basketball">4784ee25477111106dc4e357536d4326</sys_scope><sys_update_name>sys_properties_category_m2m_3efb59ab473111106dc4e357536d434c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 19:25:06</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>-568228954</payload_hash>
+        <record_name>x_0294_nba.API NBA Key.NBA Properties</record_name>
+        <reverted_from/>
+        <source>1ae5ae69477111106dc4e357536d43db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 19:25:06</sys_created_on>
+        <sys_id>641c1dab473111106dc4e357536d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183384ff0030000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 19:25:06</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>2c1c1dab5e3111101ff9ec28dacfe9cd</update_guid>
+        <update_guid_history>2c1c1dab5e3111101ff9ec28dacfe9cd:-568228954,fafb59ab48311110b93a1463fc71f14e:2142372710</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-22 20:57:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>308f226acd8148398d3725b39e93f629</sys_id>
+        <sys_metadata>3efb59ab473111106dc4e357536d434c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_0294_nba.API NBA Key.NBA Properties</sys_name>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope_delete display_value="">6bba8fc075e542d8b2a07b1d6d92c240</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_3efb59ab473111106dc4e357536d434c</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_3efb59ab473111106dc4e357536d434c">641c1dab473111106dc4e357536d43ce</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-22 20:57:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
