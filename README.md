@@ -2,9 +2,13 @@
 Basketball StatsNow is a ServiceNow application built using the balldontlie.io API open source project. balldontlie.io is a free API with no signup or key required.
 
 <b>Features:</b>
+
 -Translates all endpoints available on balldontlie.io to the ServiceNow platform
+
 -Automated daily job grabs all game data and player statlines from the previous day, and updates season average records for all players who played. It will also update automatically update a player's current listed team if they are traded or change teams, and create new Player records for anyone making their NBA debut.
+
 -Recommended setup script automatically grabs all current NBA teams, all NBA players since 1979, game data since the beginning of the 2020 season, and all player statlines for the previous month
+
 -All calls have built in wait timers as to not exceed the balldontlie.io rate limit of 60 calls per minute.
 
 <b>Installation Guide:</b> Coming soon
