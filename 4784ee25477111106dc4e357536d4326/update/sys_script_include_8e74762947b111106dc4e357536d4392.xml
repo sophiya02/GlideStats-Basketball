@@ -344,7 +344,6 @@ BasketballUtils.prototype = {
     getYesterdayStatsForAllPlayers: function() {
 
         var a = new GlideDate();
-        //a.setValue('2014-12-25'); Use this line to test specific dates if needed, comment out the line below
         a.addDaysUTC(-1);
         var ids = this.getGameIDsByDate(a);
         for (var i = 0; i < ids.length; i++) {
@@ -527,13 +526,13 @@ BasketballUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-07 20:47:44</sys_created_on>
         <sys_id>8e74762947b111106dc4e357536d4392</sys_id>
-        <sys_mod_count>216</sys_mod_count>
+        <sys_mod_count>217</sys_mod_count>
         <sys_name>BasketballUtils</sys_name>
         <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sys_script_include_8e74762947b111106dc4e357536d4392</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-05 19:54:01</sys_updated_on>
+        <sys_updated_on>2022-10-05 21:13:09</sys_updated_on>
     </sys_script_include>
 </record_update>
