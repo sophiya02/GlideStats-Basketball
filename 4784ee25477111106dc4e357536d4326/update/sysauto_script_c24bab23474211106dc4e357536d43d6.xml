@@ -22,9 +22,12 @@ new BasketballUtils().getTeams(); //Populates all current NBA teams
 new BasketballUtils().getAllPlayers(); //Populates all NBA players since 1979
 
 var a = new GlideDate;
-//new BasketballUtils().getGamesByDateRange('2020-08-01', a); //Gets all games since the beginning of the 2020 season, feel free to adjust
+new BasketballUtils().getGamesByDateRange('2020-08-01', a); //Gets all games since the beginning of the 2020 season, feel free to adjust
 
-new BasketballUtils().getGamesPlayersStatsByRange('2020-08-01', a); //Gets all games and player statlines for those games since the beginning of the 2020 season
+var b = new GlideDate;
+b.addMonthsUTC(-1);
+
+new BasketballUtils().getGamesPlayersStatsByRange(b, a); //Gets all games and player statlines for the last month
 
 new BasketballUtils().getUpdatedSeasonAvgs(); //Gets current season averages for players
 ]]></script>
@@ -32,14 +35,14 @@ new BasketballUtils().getUpdatedSeasonAvgs(); //Gets current season averages for
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-26 16:06:30</sys_created_on>
         <sys_id>c24bab23474211106dc4e357536d43d6</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Recommended Initial Setup</sys_name>
         <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_policy/>
         <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_update_name>sysauto_script_c24bab23474211106dc4e357536d43d6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-05 18:06:56</sys_updated_on>
+        <sys_updated_on>2022-10-05 21:14:30</sys_updated_on>
         <time_zone>floating</time_zone>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
