@@ -1,6 +1,14 @@
 # Basketball-StatsNow
 Basketball StatsNow is a ServiceNow application built using the balldontlie.io API open source project. balldontlie.io is a free API with no signup or key required, so it is easy to installing this application is all that is required.
 
+![Basketball StatsNow](https://i.imgur.com/668ZbjN.png "Basketball StatsNow 1")
+
+![Basketball StatsNow](https://i.imgur.com/E2UcBLI.png "Basketball StatsNow 2")
+
+![Basketball StatsNow](https://i.imgur.com/i6QYVQw.png "Basketball StatsNow 3")
+
+![Basketball StatsNow](https://i.imgur.com/DvNVzEx.png "Basketball StatsNow 4")
+
 <b>Features:</b>
 
 -Translates all endpoints available on balldontlie.io into easily usable functions on the ServiceNow platform
