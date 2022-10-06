@@ -25,17 +25,11 @@ new BasketballUtils().getTeams();
 <b>getAllPlayers()</b> - Retrieves all NBA players from 1979 to current day and saves the data to the Players table. Example usage:
 new BasketballUtils().getAllPlayers();
 
-<b>getPlayerByID(id)</b> - Retrieves information about a single player by ID and writes the data to the Players table; ID can be found on the Players table after running getAllPlayers(). This is typically only used to determine team changes. Example usage: 
-new BasketballUtils().getPlayerByID('322');
-
 <b>getGamesByDate(date)</b> - Retrieves information about all games played on a single date and writes the data to the Games table. Example usage:
 new BasketballUtils().getGamesByDate('2022-04-28');
 
 <b>getGamesByDateRange(date1, date2)</b> - Retrieves information about all games played during a date range and writes the data to the Games table. Example usage:
 new BasketballUtils().getGamesByDateRange('2022-01-01', '2022-03-31');
-
-<b>getGameByID(id)</b> - Retrieves information about a single player by ID and writes the data to the Games table; ID can be found on the Games table after running getGamesByDate() or getGamesByDateRange(). Example usage:
-new BasketballUtils().getGameByID('22194');
 
 <b>getPlayerStatsByGame(id)</b> - Retrieves all player statlines for a game and writes the data to the Player Game Stats table; Game ID can be found on the Games table after running getGamesByDate() or getGamesByDateRange(). Example usage:
 new BasketballUtils().getPlayerStatsByGame('22194');
