@@ -17,7 +17,7 @@ Basketball StatsNow is a ServiceNow application built using the balldontlie.io A
 
 -All calls have built in wait timers as to not exceed the balldontlie.io rate limit of 60 calls per minute.
 
-<b>Installation Guide:</b> Coming soon
+After installing the app, it is strongly recommended that you execute the on demand scheduled job called "Recommended Initial Setup". This can be found at https://<base_url>.service-now.com/now/nav/ui/classic/params/target/sysauto_script.do%3Fsys_id%3Dc24bab23474211106dc4e357536d43d6
 
 There is a script library called BasketballUtils that does most of the heavy lifting. You can leverage the functions here to pull in whatever NBA data you want; 1979 to present day. balldontlie.io API game stats are updated every ten minutes.
 
