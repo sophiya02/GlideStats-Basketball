@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA Basketball StatsNow - New Tab">c04ed76e47d611106dc4e357536d431f</canvas_page>
+        <name>Basketball StatsNow - New Tab</name>
+        <page display_value="PA Basketball StatsNow - New Tab">4c4ed76e47d611106dc4e357536d431d</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-05 22:51:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c4ed76e47d611106dc4e357536d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Basketball StatsNow - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_update_name>pa_tabs_0c4ed76e47d611106dc4e357536d4321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-05 22:51:20</sys_updated_on>
+    </pa_tabs>
+</record_update>
