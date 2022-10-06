@@ -3,7 +3,7 @@ Basketball StatsNow is a ServiceNow application built using the balldontlie.io A
 
 <b>Features:</b>
 
--Translates all endpoints available on balldontlie.io to the ServiceNow platform
+-Translates all endpoints available on balldontlie.io into easily usable functions on the ServiceNow platform
 
 -Visualize and analyze NBA data using the power of ServiceNow's dashboards, lists, and reporting
 
