@@ -7,7 +7,7 @@ Basketball StatsNow is a ServiceNow application built using the balldontlie.io A
 
 -Visualize and analyze NBA data using the power of ServiceNow's dashboards, lists, and reporting
 
--Automated daily job grabs all game data and player statlines from the previous day, and updates season average records for all players who played. It will also update automatically update a player's current listed team if they are traded or change teams, and create new Player records for anyone making their NBA debut.
+-Automated daily job grabs all game data and player statlines from the previous day, and updates season average records for all players who played. It will also automatically update a player's current listed team if they are traded or change teams, and create new Player records for anyone making their NBA debut.
 
 -Recommended setup script automatically grabs all current NBA teams, all NBA players since 1979, game data since the beginning of the 2020 season, and all player statlines for the previous month
 
