@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Import Season Averages" max_length="40" name="x_0294_nba_import_season_averages" sizeclass="1069" type="collection">
+    <element extends="sys_import_set_row" label="Import Season Averages" max_length="40" name="x_0294_nba_import_season_averages" sizeclass="66" type="collection">
         <element label="Assists" max_length="10" name="assists" type="string"/>
         <element label="Blocks" max_length="10" name="blocks" type="string"/>
         <element label="Defensive Rebounds" max_length="10" name="defensive_rebounds" type="string"/>

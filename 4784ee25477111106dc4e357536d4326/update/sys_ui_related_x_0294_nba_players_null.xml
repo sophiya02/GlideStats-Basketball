@@ -43,9 +43,9 @@
             <sys_id>2abd1f3a475211106dc4e357536d435b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Players - Default view</sys_name>
-            <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_package display_value="GlideStats Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
             <sys_policy/>
-            <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_scope display_value="GlideStats Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
             <sys_update_name>sys_ui_related_x_0294_nba_players_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2022-10-06 17:27:32</sys_updated_on>
