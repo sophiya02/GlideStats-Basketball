@@ -18,7 +18,7 @@
     </sys_security_acl_role>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</application>
+        <application display_value="GlideStats Basketball">4784ee25477111106dc4e357536d4326</application>
         <file_path/>
         <instance_id>fec351a2dbb1c05407072f17d49619af</instance_id>
         <instance_name>dev96325</instance_name>
@@ -51,10 +51,10 @@
         <sys_metadata>52a1ffb947f111106dc4e357536d431d</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_0294_nba_teams_stats.x_0294_nba.user</sys_name>
-        <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+        <sys_package display_value="GlideStats Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
         <sys_parent display_value="">daa1ffb947f111106dc4e357536d4319</sys_parent>
         <sys_policy/>
-        <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+        <sys_scope display_value="GlideStats Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
         <sys_scope_delete display_value="">6bba8fc075e542d8b2a07b1d6d92c240</sys_scope_delete>
         <sys_update_name>sys_security_acl_role_52a1ffb947f111106dc4e357536d431d</sys_update_name>
         <sys_update_version display_value="sys_security_acl_role_52a1ffb947f111106dc4e357536d431d">1ea1ffb947f111106dc4e357536d431f</sys_update_version>

@@ -14,9 +14,9 @@
             <sys_id>31008eeb47b111106dc4e357536d438f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Turnovers</sys_name>
-            <sys_package display_value="Basketball StatsNow" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
+            <sys_package display_value="GlideStats Basketball" source="x_0294_nba">4784ee25477111106dc4e357536d4326</sys_package>
             <sys_policy/>
-            <sys_scope display_value="Basketball StatsNow">4784ee25477111106dc4e357536d4326</sys_scope>
+            <sys_scope display_value="GlideStats Basketball">4784ee25477111106dc4e357536d4326</sys_scope>
             <sys_update_name>sys_documentation_x_0294_nba_player_game_stats_turnovers_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2022-09-13 22:02:12</sys_updated_on>
