@@ -69,4 +69,4 @@ new BasketballUtils().getGamesPlayersStatsByRange('2022-01-01', '2022-01-31');
 <b>getPlayerStatlinesByYear(id, year)</b> - Retrieves all single-game statlines for a player for an entire season, and saves them to the Player Game Stats table. Example usage:
 new BasketballUtils().getPlayerStatlinesByYear('322', '2021);
 
-Please email me at statsnow@kyle.ws with any comments or questions.
+Please email me at statsnow@kyle.ws or post to the Github Discussions tab with any comments or questions.
