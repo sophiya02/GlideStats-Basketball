@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Games" max_length="40" name="x_0294_nba_games" sizeclass="5099" type="collection">
+    <element db_object_id="2c1a4cd447540210ecb67f52d16d4325" label="Games" max_length="40" name="x_0294_nba_games" type="collection">
         <element label="Date" max_length="40" name="date" type="glide_date"/>
         <element label="Home Team" max_length="32" name="home_team" reference="x_0294_nba_teams" type="reference"/>
         <element label="Home Team Score" max_length="3" name="home_team_score" type="integer"/>
         <element display="true" label="ID" max_length="10" name="id" type="string"/>
         <element label="Postseason" max_length="40" name="playoffs" type="boolean"/>
         <element label="Season" max_length="10" name="season" type="string"/>
+        <element label="Trial Game" max_length="40" name="trial_game" type="boolean"/>
         <element label="Visitor Team" max_length="32" name="visitor_team" reference="x_0294_nba_teams" type="reference"/>
         <element label="Visitor Team Score" max_length="3" name="visitor_team_score" type="integer"/>
         <index name="index">
-            <element name="visitor_team"/>
+            <element name="home_team"/>
         </index>
         <index name="index2">
             <element name="id"/>
         </index>
         <index name="index3">
-            <element name="home_team"/>
+            <element name="visitor_team"/>
         </index>
     </element>
 </database>
